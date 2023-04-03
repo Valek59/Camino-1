@@ -1,0 +1,15 @@
+.content-middle{
+  grid-area: b;
+  background-color: #FEF7E6;
+  min-height: calc(100vh - 112px);
+  width: 98%;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 50px 100px 50px 100px;
+  position: relative;
+  color: black;
+  font-family: "Avenir", sans-serif;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}

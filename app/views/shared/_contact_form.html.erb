@@ -1,0 +1,11 @@
+<%= simple_form_for @client do |f| %>
+  <%= f.input :first_name, label: "Prénom" %>
+  <%= f.input :last_name, label: "Nom" %>
+  <%= f.input :company, label: "Entreprise" %>
+  <%= f.input :role, label: "Votre rôle" %>
+  <%= f.input :pro_email, label: "Email professionnel" %>
+  <%= f.input :phone_number, label: "Numéro de téléphone" %>
+  <%= f.input :contact_preference, label: "Préferences de contact" %>
+  <%= f.input :how_know_camino, label:"Comment avez-vous connu Camino?" %>
+  <%= f.submit "Submit" %>
+<% end %>

@@ -1,0 +1,12 @@
+.navbar-top {
+  grid-area: a;
+  background-color: white;
+  color: black;
+  border-bottom: 2px solid rgb(229, 227, 227);
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  font-family: "Avenir", sans-serif;
+}

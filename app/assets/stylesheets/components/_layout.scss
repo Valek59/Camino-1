@@ -1,0 +1,39 @@
+*,
+::after,
+::before{
+    margin: 5px;
+    padding: 0;
+}
+
+.layout{
+    display: grid;
+    grid-template-rows: 56px auto 56px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 16px;
+    grid-template-areas:
+    "a a a"
+    "b b b"
+    "c c c";
+    color: black;
+}
+
+.tabs-underlined {
+  display: flex;
+  align-items: center;
+}
+
+.tabs-underlined .tab-underlined {
+  color: black;
+  font-family: "Avenir", sans-serif;
+  padding: 8px;
+  margin: 8px;
+  opacity: .4;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+}
+
+.tabs-underlined .tab-underlined.active {
+  opacity: 1;
+  border-bottom: 3px solid #555555;
+}
