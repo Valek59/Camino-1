@@ -12,14 +12,14 @@
 
 ActiveRecord::Schema[7.0].define(version: 2023_04_02_153555) do
   create_table "clients", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "company"
-    t.string "role"
-    t.string "pro_email"
-    t.string "contact_preference"
-    t.string "phone_number"
-    t.string "how_know_camino"
+    t.string "first_name", null: false
+    t.string "last_name", null: false
+    t.string "company", null: false
+    t.string "role", null: false
+    t.string "pro_email", null: false
+    t.string "contact_preference", null: false
+    t.string "phone_number", null: false
+    t.string "how_know_camino", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

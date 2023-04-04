@@ -30,15 +30,17 @@ label {
 }
 
 input[type="submit"] {
-  background-color: #007bff;
+  background-color: #FFBA40;
   color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 input[type="submit"]:hover {
-  background-color: #0062cc;
+  background-color: #FEF7E6;
+  color: black;
 }

@@ -32,3 +32,36 @@ ul {
 li {
   margin-bottom: 10px;
 }
+
+.value-proposition {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-value-proposition {
+  background-color:#FEF7E6;
+  border-radius: 10px;
+  align-items: center;
+  width: 60%;
+}
+
+.value-proposition-image img {
+  max-width: 100%;
+  border-top-right-radius:10px;
+  border-top-left-radius:10px;
+  padding: none;
+}
+
+.card-value-proposition-title {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .value-proposition {
+    grid-template-columns: 1fr;
+  }
+}
