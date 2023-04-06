@@ -2,66 +2,89 @@
   font-family: 'Avenir';
   src: url('/assets/fonts/Avenir.ttf') format('truetype');
 }
-
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+.total-value-proposition {
+  width: 100%;
+  background-color: #272727;
+  margin-top: 50px;
+  border-radius: 16px;
+  padding: 8px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  & h2 {
+    padding-left: 40px;
+    padding-top: 24px;
+  }
 }
 
-.first-title {
-  margin-top: 40px;
-  font-family: Avenir, sans-serif;
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-h3 {
-  font-family: Avenir, sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 40px;
-}
-
-ul {
-  margin-left: 30px;
-  margin-bottom: 20px;
-}
-
-li {
-  margin-bottom: 10px;
+.cards-global-value {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px; /* Adjust the gap as per your design */
+  max-width: 100%; /* ajuster la largeur maximale de la grille en fonction de vos besoins */
+  margin: 0 auto; /* centrer la grille horizontalement */
+  justify-items: center;
+  padding: 16px 50px 16px 50px;
 }
 
 .value-proposition {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 100%;
-  font-size: 14px;
-  justify-content: center;
-  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 90%;
+  height: 400px;
+  border: 2px solid #FEF7E6;
+}
+
+h2.value-proposition-title {
+  padding-top: 32px ;
+  padding-left: 40px;
+  font-weight: bold;
+  color: #FEF7E6;
+}
+
+.first-title {
+  font-size: 42px;
+  margin-top: 24px;
+
+}
+
+.phrase-accroche {
+  margin: 40px 0 40px 0;
+  font-size: 24px;
 }
 
 .card-value-proposition {
-  background-color:#FEF7E6;
-  border-radius: 10px;
-  align-items: center;
-  width: 60%;
+  position: relative;
+}
+
+.value-proposition-image {
+  height: 200px; /* Adjust the height as per your design */
+  overflow: hidden;
 }
 
 .value-proposition-image img {
-  max-width: 100%;
-  border-top-right-radius:10px;
-  border-top-left-radius:10px;
-  padding: none;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.value-proposition-content {
+  padding: 0 20px 0 20px;
 }
 
 .card-value-proposition-title {
-  margin-top: 0;
+  font-size: 24px;
+  color: #333333;
 }
 
 @media screen and (max-width: 767px) {
-  .value-proposition {
+  /* ajuster la grille pour les écrans plus petits, avec une disposition en colonne unique */
+  .cards-global-value {
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    max-width: 90%; /* ajuster la largeur maximale de la grille pour les écrans plus petits */
   }
 }

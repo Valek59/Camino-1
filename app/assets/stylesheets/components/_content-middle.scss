@@ -12,4 +12,23 @@
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  & p, li {
+    font-size: 15px;
+  }
+  & h2 {
+    font-size: 48px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  & h3 {
+    font-size: 40px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  h1 {
+    font-size: 56px;
+    font-weight: 2000;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
