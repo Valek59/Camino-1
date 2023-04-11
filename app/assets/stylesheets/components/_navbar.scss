@@ -11,4 +11,22 @@
   align-items: center;
   padding: 25px;
   font-family: "Avenir", sans-serif;
+  font-weight: bold;
+}
+
+.title-logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: #272727;
+  text-decoration: none;
+}
+
+.title-logo:hover {
+  color: #272727;
+  text-decoration: none;
+}
+
+.navbar-top a {
+  color: #272727;
+  text-decoration: none;
 }

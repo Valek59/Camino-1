@@ -1,5 +1,6 @@
 <nav class="navbar-top" data-controller="navbar">
-  <h1 class="title-logo"><strong> Camino </strong></h1>
+  <%# <h1 class="title-logo"><strong> Camino </strong> %>
+  <%= link_to "Camino", developpement_path, class: "title-logo" %>
 
   <ul class="list-inline tabs-underlined">
     <li>
@@ -10,7 +11,9 @@
     </li>
     <li>
       <a href="#" class="tab-underlined">Pilotage de carrière</a> %>
-      <button class="btn savoir-plus"> <strong> PRENONS CONTACT </strong></button>
+        <%= link_to "PRENONS CONTACT", new_client_path, class: "btn savoir-plus" %>
+
+
     </li>
   </ul>
 

@@ -4,7 +4,6 @@
 <h1 class= "first-title"> <strong> Rendez vos collaborateurs acteurs de leur développement professionnel </strong></h1>
 
 <p class="phrase-accroche"> La solution pour projeter, développer et engager les talents de votre organisation </p>
-<%# <button class="btn savoir-plus"> <strong> PRENONS CONTACT </strong></button> %>
 
 <%= render "shared/image_banner" %>
 
@@ -120,24 +119,34 @@
   </div>
 
   <div class="container-why-camino">
-    <h1 class="why-camino-title"> 4 raisons de choisir Camino </h1>
+    <h2 class="why-camino-title"> <strong> 4 raisons de choisir Camino  </strong></h2>
+    <p class="why-camino-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <ul role="list" class="hiw-component slide-up">
     <li class="hiw-child slide-1" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
     <div class="blockquote">01</div><div class="hiw-content">
-    <h3 class="heading-5 margin-bottom-8">Share your&nbsp;info</h3>
-    <p class="margin-bottom-0">Tell us a litte bit about yourself, including your email address.</p></div></li>
-    <li class="hiw-child slide-2" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><div class="blockquote">02</div>
-    <div class="hiw-content"><h3 class="heading-5 margin-bottom-8">Share your employee’s&nbsp;info</h3><p class="margin-bottom-0">Tell us about your employee. Don’t worry about tracking down the address. We’ll reach out and get that directly from them.</p></div></li>
-    <li class="hiw-child slide-3" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><div class="blockquote">03</div><div class="hiw-content"><h3 class="heading-5 margin-bottom-8">Tell us about the&nbsp;device(s)</h3><p class="margin-bottom-0">List which devices need to be returned and what we should do with them (store, sell, recycle, or&nbsp;donate).</p></div></li>
-    <li class="hiw-child slide-4" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><div class="blockquote">04</div><div class="hiw-content"><h3 class="heading-5 margin-bottom-8">Pay for the&nbsp;retrieval</h3>
-    <p class="margin-bottom-0">Check out using a secure Stripe checkout form.</p></div></li></ul>
+    <h4 class="heading-5 margin-bottom-8">Une méthode de bout en bout</h4>
+    <p class="margin-bottom-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></li>
+    <li class="hiw-child slide-2" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+    <div class="blockquote">02</div>
+    <div class="hiw-content">
+    <h4 class="heading-5 margin-bottom-8">Intégration dans votre écosystème SIRH</h4>
+    <p class="margin-bottom-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></li>
+    <li class="hiw-child slide-3" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+    <div class="blockquote">03</div><div class="hiw-content">
+    <h4 class="heading-5 margin-bottom-8">Une expérience immersive</h4>
+    <p class="margin-bottom-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></li>
+    <li class="hiw-child slide-4" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+    <div class="blockquote">04</div>
+    <div class="hiw-content">
+    <h4 class="heading-5 margin-bottom-8">Une solution adaptable</h4>
+    <p class="margin-bottom-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></li></ul>
   </div>
 
   <div class="container-testimony">
-    <h1 class="testimony-title"> Témoignages </h1>
+    <h2 class="testimony-title"> <strong> Témoignages </strong> </h2>
   </div>
 
-  <script type="module" src="/carousel.js"> </script>
+
     <div class="carousel">
       <div class="carousel-container">
         <% (1..6).each do |i| %>
@@ -151,7 +160,12 @@
       <button class="carousel-next">&#10095;</button>
     </div>
 
+    <div class="container-cta", style="text-align: center; margin-bottom:56px">
+        <h2 class="cta-title"> <strong> Vous souhaitez en savoir plus ? </strong> </h2>
+        <p class="cta-subtitle" style="margin-bottom: 48px; margin-top: 24px",>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <%= link_to "PRENONS CONTACT", new_client_path, class: "btn savoir-plus"%>
+    </div>
 
-<%= render "shared/contact_form", request: request %>
+
 </main>
 <%= render "shared/footer" %>

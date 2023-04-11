@@ -11,6 +11,10 @@ class ClientsController < ApplicationController
     @client = Client.new
   end
 
+  def new
+    @client = Client.new
+  end
+
   def create
     @client = Client.new
     if @client.save
@@ -18,5 +22,11 @@ class ClientsController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
+  end
+
+  private
+
+  def client_params
+    params.require(:client).permit(:name, :email, :phone, :message)
   end
 end
