@@ -4,6 +4,4 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :clients, only: [:new, :create]
   get '/developpement', to: 'clients#developpement', as: "developpement"
-  get '/accompagnement', as: "accompagnement"
-  get '/pilotage', as: "pilotage"
 end

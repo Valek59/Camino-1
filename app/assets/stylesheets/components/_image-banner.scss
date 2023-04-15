@@ -1,12 +1,12 @@
 .full-image-banner-component {
   display: flex;
-  width: 100%;
-  margin-bottom: 80px;
-  margin-top: 80px;
+  width: 90%;
+  margin: 80px 70px 120px 70px;
   justify-content: center;
   align-items: center;
   grid-column-gap: 2.5rem;
   grid-row-gap: 2.5rem;
+  gap: 70px;
 }
 
 .banner-child banner-circle {
@@ -39,7 +39,7 @@
   object-position: 100% 50%;
 }
 .image-cover.circle-image {
-  border-radius: 50%;
+  border-radius: 50rem;
 }
 
 .banner-child tall-pill {
