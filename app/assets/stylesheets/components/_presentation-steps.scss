@@ -1,41 +1,126 @@
-.presentation-steps-camino {
-  margin: 80px 70px 60px 70px;
+.context-steps {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.text-explaination-container-steps {
+  margin-top: 30px;
+  margin-left: -50px;
+}
+
+.explaination-context-rh {
+  font-size: 20px;
+  margin-bottom: -10px;
+  margin-top: 16px;
 }
 
 .camino-3-steps-title {
+  padding-top: 80px;
   text-align: center;
   font-size: 60px;
   font-weight: 2000;
   padding-bottom: 16px;
 }
+
 .presentation-steps-camino-color {
-  background-color: #f7e8c0;
   border-radius: 16px;
   padding: 16px;
+  background-color: #FFF2CC;
+}
+
+.container-icon-and-p-steps{
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+  margin-top: 24px;
+}
+
+#icon-projetez-steps {
+  margin: auto;
+  background-color: #FFBA40;
+  color: white;
+  border-radius: 25%;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#icon-developpez-steps {
+  margin: auto;
+  background-color: #475177;
+  color: white;
+  border-radius: 25%;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#icon-engagez-steps {
+  margin: auto;
+  background-color:  #e66852;
+  color: white;
+  border-radius: 25%;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.phrase-steps {
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 16px;
 }
 
 .presentation-steps-camino-title {
-  margin-top: 50px;
+  margin-top: 20px;
   font-weight: 800;
 }
 
-// .container-one-step {
-//   border: 1px solid #272727;
-//   padding: 16px;
-// }
+.camino-steps {
+  color: black;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 0 50px 0 50px;
+  padding: 5px 20px 5px 20px;
+  font-size: 16px;
+}
+
+.container-one-step {
+  margin-top: 24px;
+}
 
 .cards-container-explainations {
   display: flex;
-  gap: 24px;
-  margin: 48px 0 80px 0;
+  margin: 60px 0 80px 0;
   border-radius: 16px;
-  padding: 16px;
+  border-top-left-radius: 150%;
+  border-bottom-left-radius: 150%;
+}
+
+.cards-container-explainations-developpez {
+  display: flex;
+  margin: 60px 0 80px 0;
+  border-radius: 16px;
+  border-bottom-left-radius: 150%;
+  border-top-left-radius: 150%;
+}
+
+.cards-container-explainations-engagez {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 80px 0;
+  border-radius: 16px;
 }
 
 .icon-container-explainations img {
-  border-radius: 24px;
-  border: 2px solid #FFBA40;
-  box-shadow: 0 0 10px white;
+  border-top-right-radius: 159px;
+  border-top-left-radius: 150px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 150px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container-explainations {
+  margin-right: -200px;
 }
 
 .ul-title-container-steps {

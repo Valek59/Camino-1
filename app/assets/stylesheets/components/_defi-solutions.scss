@@ -12,6 +12,14 @@
   }
 }
 
+.reponse-defi-solution {
+  display: none;
+}
+
+.reponse-defi-solution.visible {
+  display: block;
+}
+
 .phrase-defi-solutions {
   padding:16px 16px 16px 24px;
   margin: 8px;
