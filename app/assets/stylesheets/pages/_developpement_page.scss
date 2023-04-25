@@ -2,6 +2,23 @@
   font-family: 'Avenir';
   src: url('/assets/fonts/Avenir.ttf') format('truetype');
 }
+
+.banner-website-camino {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image-banner-website-camino {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  overflow-clip-margin: content-box;
+  height: 330PX;
+  margin-bottom: 70px;
+}
+
+
 .total-value-proposition {
   width: 100%;
   background-color: #FFF2CC;
@@ -21,7 +38,7 @@
 .cards-global-value {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 400px;;
+  height: 420px;;
   gap: 40px; /* Adjust the gap as per your design */
   max-width: 100%; /* ajuster la largeur maximale de la grille en fonction de vos besoins */
   margin: 0 auto; /* centrer la grille horizontalement */
@@ -34,7 +51,7 @@
   box-shadow: var(--small-shadow);
   overflow: hidden;
   width: 90%;
-  height: 400px;
+  height: 430px;
   border: 1px solid  black;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
@@ -84,7 +101,7 @@ h2.value-proposition-title {
 }
 
 .phrase-accroche {
-  margin: 20px 70px 50px 70px;
+  margin: 20px 70px 20px 70px;
   font-size: 24px;
 }
 
@@ -127,18 +144,24 @@ h2.value-proposition-title {
   background-color: #FFBA40;
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  margin-bottom: 16px;
 }
 
 #title-developpez {
   background-color: #475177;
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  margin-bottom: 16px;
 }
 
 #title-engagez {
   background-color: #e66852;
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  margin-bottom: 16px;
 }
 
 .value-proposition h3, .value-proposition .h3 {
@@ -168,4 +191,11 @@ h2.value-proposition-title {
 
 .container-cta{
   margin-bottom: 56px;
+}
+
+.ending-transition {
+  width: 20%;
+  border-bottom: 2px solid black;
+  align-items: center;
+  margin: auto;
 }

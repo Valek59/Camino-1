@@ -1,12 +1,28 @@
-.container-defi-solutions {
-  margin: 30px 0 30px 0;
+.container-global-defi-solution{
+
+}
+
+.container-minor-defi-solution {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+#value-proposition-title {
+  font-size: 42px;
+  padding-top: 80px ;
+  padding-bottom: 50px;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: 600;
+  color: #272727;
 }
 
 .defi-solutions {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 30px 70px 140px 70px;
-  margin-top: 10px;
+  margin: 30px 100px 50px 70px;
+  width: 100%;
+  box-sizing: border-box;
   & h2 {
     margin-top: 20px;
   }
@@ -14,9 +30,19 @@
 
 .reponse-defi-solution {
   display: none;
+  padding:0 16px 16px 24px;
+  margin: 8px;
+  background-color:white;
+  color: #475177;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  border : 3px solid white;
+  cursor: pointer;
+  transform: translateY(-5px);
 }
 
-.reponse-defi-solution.visible {
+.visible {
   display: block;
 }
 
@@ -31,4 +57,31 @@
   border : 3px solid white;
   cursor: pointer;
   transform: translateY(-5px);
+}
+
+.anim-top-to-bottom {
+  animation: top-to-bottom 0.5s;
+  }
+  @keyframes top-to-bottom {
+  from {
+  opacity: 0;
+  transform: translateY(-20px);
+  }
+  to {
+  opacity: 1;
+  transform: translateY(0);
+  }
+  }
+
+.image-defi-solution {
+  margin-left: 100px;
+  box-sizing: border-box;
+  margin-block: auto;
+  width: 50%;
+}
+
+#defi-solution-icon {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  border-radius: 50%;
 }
