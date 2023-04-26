@@ -15,7 +15,7 @@
   overflow: hidden;
   overflow-clip-margin: content-box;
   height: 330PX;
-  margin-bottom: 70px;
+  margin-bottom: 130px;
 }
 
 
@@ -68,6 +68,11 @@
   }
 }
 
+.value-proposition:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
 h2.value-proposition-title-cards {
   font-size: 42px;
   padding-top: 80px ;
@@ -91,7 +96,8 @@ h2.value-proposition-title {
 }
 
 .first-title {
-  margin: 30px 70px 10px 70px;
+  margin: 24px 70px 10px 70px;
+  text-align: center;
   padding: 0;
   color:  #272727;
   font-size: 60px;
@@ -131,37 +137,31 @@ h2.value-proposition-title {
 
 .card-value-proposition-title {
   position: relative;
-  padding: 10px 10px 10px 10px;
-  width: 60%;
-  border-radius: 30px;
   align-items: center;
   font-size: 12px;
   color: #272727;
   margin: auto;
+  margin-top: 30px;
+  width: 200px;
+  border-radius: 16px;
+  padding: 8px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  & a {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 #title-projetez {
   background-color: #FFBA40;
-  color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 30px;
-  margin-bottom: 16px;
 }
 
 #title-developpez {
   background-color: #475177;
-  color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 30px;
-  margin-bottom: 16px;
 }
 
 #title-engagez {
   background-color: #e66852;
-  color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 30px;
-  margin-bottom: 16px;
 }
 
 .value-proposition h3, .value-proposition .h3 {
@@ -190,6 +190,10 @@ h2.value-proposition-title {
 ---------------------------------VOUS-SOUHAITEZ-EN-SAVOIR-PLUS---------------------
 
 .container-cta{
+  margin-bottom: 56px;
+}
+
+.cta-title {
   margin-bottom: 56px;
 }
 

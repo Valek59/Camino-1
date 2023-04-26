@@ -3,7 +3,7 @@ class ClientsController < ApplicationController
     @client = Client.new
   end
 
-  def accompagnement
+  def mentions_legales
     @client = Client.new
   end
 

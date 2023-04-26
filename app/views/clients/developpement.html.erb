@@ -1,53 +1,56 @@
 <%= render "shared/navbar-top-default" %>
 <main class="content-middle">
 
-<h1 class= "first-title"> <strong> Rendez vos collaborateurs acteurs de leur développement professionnel </strong></h1>
+<h1 class= "first-title"> <strong> Impliquez vos collaborateurs, développez vos performances </strong></h1>
 
 <%# <p class="phrase-accroche"> Nous aidons vos talents à se projeter, les accompagner et à les engager dans votre organisation </p> %>
 <%# <%= render "shared/image_banner" %>
   <div class="banner-website-camino">
-    <img src="<%= asset_path('graphisme-banner-1.png') %> sizes="(max-width: 767px) 16vw, 13vw srcset="<%= asset_path('graphisme-banner-1.png') %> 500w, <%= asset_path('graphisme-banner-1.png') %> 660w" alt="Sticker of a laptop computer." class="image-banner-website-camino">
+    <img src="<%= asset_path('graphisme-banner-1.png') %> sizes="(max-width: 767px) 16vw, 13vw srcset="<%= asset_path('graphisme-banner-1.png') %> 500w, <%= asset_path('graphisme-banner-1.png') %> 660w" alt="camino-banner-presentation-3-icons-and-2-pictures-of-people-working" class="image-banner-website-camino">
   </div>
 
   <div class="total-value-proposition">
-    <h2 class="value-proposition-title-cards"> Aidons vos collaborateurs à se sentir bien chez vous, longtemps </h2>
+    <h2 class="value-proposition-title-cards"> Aidons vos collaborateurs à se sentir bien chez vous, <br> plus longtemps </h2>
     <div class="cards-global-value">
       <div class="value-proposition">
         <div class="card-value-proposition">
           <div class="value-proposition-image">
-            <img src= "https://img.freepik.com/free-photo/team-meeting-startups_23-2148898716.jpg?t=st=1682343314~exp=1682343914~hmac=2b1902d13703ce3bc4ddd3f6700e07ae4c217442dfcce3fe60ee16d0c47dd3fb">
-            <%# <img src= "https://img.freepik.com/free-photo/thoughtful-creative-female-worker-dreams-about-holidays-while-working-office-develops-new-business-project-makes-blueprints-wears-spectacles-poses-coworking-space-analyzes-information_273609-50618.jpg?t=st=1681899330~exp=1681899930~hmac=fd56ef0dcaa3960f5835f2c1a19215a1112d12deb300c0b0248a7690f6625f24"> %>
+          <img src="<%= asset_path('seprojeter-image.jpeg') %> sizes="(max-width: 767px) 16vw, 13vw srcset="<%= asset_path('seprojeter-image.jpeg') %> 500w, <%= asset_path('seprojeter-image.jpeg') %> 660w" alt="2-people-looking-to-a-laptop">
           </div>
         </div>
         <div  class="value-proposition-content">
-          <p>  Une suite d’exercices de réflexion à réaliser en autonomie pour se découvrir, se comprendre, se projeter </p>
-          <h3 class="card-value-proposition-title" id="title-projetez"><strong>Projetez</strong></h3>
+          <p>  Un parcours de réflexion à réaliser en autonomie pour dessiner son projet professionnel </p>
+          <div class="card-value-proposition-title" id="title-projetez">
+            <a href="#seprojeter-steps-div"  ><strong>Se projeter</strong></a>
+          </div>
         </div>
       </div>
 
       <div class="value-proposition">
         <div class="card-value-proposition">
           <div class="value-proposition-image">
-            <%# <img src= "https://img.freepik.com/free-photo/mixed-race-woman-man-coworkers-try-find-solution-work-check-information-internet-via-mobile-phone-study-papers-pose-coworking-space-enjoy-cooperation_273609-50644.jpg"> %>
-            <img src= "https://img.freepik.com/free-photo/close-up-young-business-person-doing-internship_23-2149305430.jpg?w=1480&t=st=1682356102~exp=1682356702~hmac=fe6cf387b5e32316e3f1c41f6aaaeb5e35aa61523755986368085adeb57d307c">
+            <img src="<%= asset_path('accompagner-image.jpeg') %> sizes="(max-width: 767px) 16vw, 13vw srcset="<%= asset_path('accompagner-image.jpeg') %> 500w, <%= asset_path('accompagner-image.jpeg') %> 660w" alt="2-workers-looking-to-the-same-paper">
           </div>
         </div>
         <div  class="value-proposition-content">
-          <p> Une structure pour co-construire, accompagner et piloter des plans de carrière individualisés </p>
-          <h3 class="card-value-proposition-title" id="title-developpez"><strong>Accompagnez</strong></h3>
+          <p> Un cadre d'échange pour être accompagné en interne et piloter son plan de carrière individualisé </p>
+          <div class="card-value-proposition-title" id="title-developpez">
+            <a href="#accompagner-steps-div"><strong>Accompagner</strong></a>
+          </div>
         </div>
       </div>
 
       <div class="value-proposition">
         <div class="card-value-proposition">
           <div class="value-proposition-image">
-            <%# <img src= "https://img.freepik.com/free-photo/happy-dark-skinned-female-student-with-curly-afro-hair-does-hometask-makes-report-draws-sketches-wears-sweatshirt-pose-coworking-space_273609-50654.jpg"> %>
-            <img src= "https://img.freepik.com/free-photo/young-entrepreneurs-working-late-communicating-office-focus-is-man-with-beard_637285-2680.jpg?w=1480&t=st=1682356131~exp=1682356731~hmac=fba74c2798b4027e718804c18a0393895165b8da17ace75018cfc107cb978917">
+            <img src="<%= asset_path('engager-image.jpeg') %> sizes="(max-width: 767px) 16vw, 13vw srcset="<%= asset_path('engager-image.jpeg') %> 500w, <%= asset_path('engager-image.jpeg') %> 660w" alt="3-workers-smiling-in-front-of-the-same-computer">
           </div>
         </div>
         <div  class="value-proposition-content">
-          <p> Une mesure et un suivi de l'engagement des collaborateurs pour identifier les leviers d'action associés </p>
-          <h3 class="card-value-proposition-title" id="title-engagez"><strong>Engagez</strong></h3>
+          <p> Un suivi de l'engagement des collaborateurs pour identifier les signaux et actionner les bons leviers RH </p>
+          <div class="card-value-proposition-title"  id="title-engagez">
+            <a href="#engager-steps-div"><strong>Engager</strong></a>
+          </div>
         </div>
       </div>
 
@@ -62,78 +65,84 @@
 
   <div class="presentation-steps-camino-color">
     <div class="presentation-steps-camino">
-      <p class="camino-3-steps-title"> <strong> Camino en 3 étapes clés </strong> </p>
-      <p class="phrase-steps"> Un service adapté à vos besoins pour améliorer l'expérience de vos collaborateurs</p>
+      <p class="camino-3-steps-title"> <strong> 3 étapes clés </strong> </p>
+      <p class="phrase-steps"> Pour proposer à vos collaborateurs une expérience professionnelle améliorée </p>
 
 
-      <div class="container-one-step">
+      <div class="container-one-step" id="seprojeter-steps-div">
         <div class="camino-steps">
           <div class="icone-steps-title">
-            <img src="<%= asset_path('projetez-yellow.png') %>" loading="eager" sizes="(max-width: 767px) 16vw, 13vw" srcset="<%= asset_path('projetez-yellow.png') %> 500w, <%= asset_path('projetez-yellow.png') %> 660w" alt="Sticker of a laptop computer." class="icone-each-steps-camino" height="184">
+            <div class="icon-steps-image">
+              <img src="<%= asset_path('projetez-yellow.png') %>" loading="eager" sizes="(max-width: 767px) 16vw, 13vw" srcset="<%= asset_path('projetez-yellow.png') %> 500w, <%= asset_path('projetez-yellow.png') %> 660w" alt="icon-illustrating-career-projection-light-bulb" class="icone-each-steps-camino" height="184">
+            </div>
             <div class="div-context-steps">
-              <h2 class="presentation-steps-camino-title"><strong>Projetez</strong> </h2>
+              <h2 class="presentation-steps-camino-title"><strong>Se projeter</strong> </h2>
               <p class="explaination-context-rh"> 41%  des collaborateurs démissionnent en raison du <strong> manque de perspectives professionnelles </strong>. Proposer des services de développement professionnel permet de <strong> réduire votre turnover jusqu’à 50% </strong>. </p>
             </div>
           </div>
           <div class="cards-container-explainations">
             <div class="icon-container-explainations">
-              <img src= "https://img.freepik.com/free-photo/thoughtful-creative-female-worker-dreams-about-holidays-while-working-office-develops-new-business-project-makes-blueprints-wears-spectacles-poses-coworking-space-analyzes-information_273609-50618.jpg?t=st=1681899330~exp=1681899930~hmac=fd56ef0dcaa3960f5835f2c1a19215a1112d12deb300c0b0248a7690f6625f24" style="width:60%">
+              <img src="<%= asset_path('seprojeter-image.jpeg') %> sizes="(max-width: 767px) 16vw, 13vw srcset="<%= asset_path('seprojeter-image.jpeg') %> 500w, <%= asset_path('seprojeter-image.jpeg') %> 660w" alt="2-people-looking-to-a-laptop" style="width:60%; border:3px solid #FFBA40;">
             </div>
             <div class="text-explaination-container-steps">
             <div class="container-icon-and-p-steps">
-              <i class="fa-brands fa-font-awesome" id="icon-projetez-steps" ></i>
-              <p> <strong> Se découvrir et se comprendre </strong> <br> Un accès à un catalogue de ressources et des mises en pratique est mis à disposition </p>
+              <i class="fa-solid fa-cloud" id="icon-projetez-steps" ></i>
+              <p> <strong> Se découvrir et se comprendre </strong> <br> Accéder à un catalogue de ressources et des mises en pratique est mis à disposition </p>
             </div>
             <div class="container-icon-and-p-steps">
-              <i class="fa-brands fa-font-awesome" id="icon-projetez-steps" ></i>
-              <p> <strong> Partager ses réflexions </strong> <br> Une méthode et un accompagnement intuitif pour poser ses objectifs en lien avec le référentiel RH de l’organisation </p>
+              <i class="fa-solid fa-bullseye" id="icon-projetez-steps" ></i>
+              <p> <strong> Poser ses objectifs </strong> <br> Bénéficier d'une méthode intuitive pour poser ses objectifs en autonomie à court, moyen et long terme </p>
             </div>
             <div class="container-icon-and-p-steps">
-              <i class="fa-brands fa-font-awesome" id="icon-projetez-steps" ></i>
-              <p> <strong> Poser ses objectifs </strong> <br> Une méthode et un accompagnement intuitif pour poser ses objectifs en lien avec le référentiel RH de l’organisation </p>
+              <i class="fa-solid fa-retweet" id="icon-projetez-steps" ></i>
+              <p> <strong> Partager ses réflexions </strong> <br> Un cadre d'échange permettant le partage des réflexions et des objectifs initiés par le talent </p>
             </div>
               </div>
             </div>
         </div>
       </div>
 
-      <div class="container-one-step">
+      <div class="container-one-step" id="accompagner-steps-div">
         <div class="camino-steps">
           <div class="icone-steps-title">
-            <img src="<%= asset_path('developpez-blue.png') %>" loading="eager" sizes="(max-width: 767px) 16vw, 13vw" srcset="<%= asset_path('developpez-blue.png') %> 500w, <%= asset_path('developpez-blue.png') %> 660w" alt="Sticker of a laptop computer." class="icone-each-steps-camino" height="184">
+            <div class="icon-steps-image">
+            <img src="<%= asset_path('developpez-blue.png') %>" loading="eager" sizes="(max-width: 767px) 16vw, 13vw" srcset="<%= asset_path('developpez-blue.png') %> 500w, <%= asset_path('developpez-blue.png') %> 660w" alt="icon representing a career orientation" class="icone-each-steps-camino" height="184">
+            </div>
             <div class="div-context-steps">
-              <h2 class="presentation-steps-camino-title"><strong>Accompagnez</strong> </h2>
-              <p class="explaination-context-rh"> 50% de vos nouveaux collaborateurs seront nés dans les années 2000 en 2025. Camino vous permet d’<strong>adresser l’enjeu intergénérationnel dans votre organisation</strong>. </p>
+              <h2 class="presentation-steps-camino-title"><strong>Accompagner</strong> </h2>
+              <p class="explaination-context-rh"> 87% des employés identifie le partage de connaissance entre pairs comme essentiel dans leur apprentissage. <strong> Camino vous permet de structurer cet apprentissage en renforçant les liens humains</strong>. </p>
             </div>
           </div>
           <div class="cards-container-explainations">
             <div class="icon-container-explainations">
-              <img src="https://img.freepik.com/free-photo/mixed-race-woman-man-coworkers-try-find-solution-work-check-information-internet-via-mobile-phone-study-papers-pose-coworking-space-enjoy-cooperation_273609-50644.jpg" style="width:60%">
+              <img src="<%= asset_path('accompagner-image.jpeg') %> sizes="(max-width: 767px) 16vw, 13vw srcset="<%= asset_path('accompagner-image.jpeg') %> 500w, <%= asset_path('accompagner-image.jpeg') %> 660w" alt="2-workers-looking-to-the-same-paper" style="width:60%; border:3px solid #475177;">
             </div>
             <div class="text-explaination-container-steps">
               <div class="container-icon-and-p-steps">
-                <i class="fa-brands fa-font-awesome" id="icon-developpez-steps" ></i>
-                <p> <strong> Structurer, simplifier l'accompagnement et son suivi </strong> <br> En outillant vos talents et vos managers pour que la coopération soit efficace, en toute autonomie </p>
-              </div>
-              <div class="container-icon-and-p-steps">
-                <i class="fa-brands fa-font-awesome" id="icon-developpez-steps" ></i>
+                <i class="fa-solid fa-retweet" id="icon-developpez-steps" ></i>
                 <p> <strong> Guider vos talents  </strong> <br> Capitaliser sur les savoirs et l'expérience de vos managers pour optimiser l'orientation de vos talents </p>
               </div>
               <div class="container-icon-and-p-steps">
-                <i class="fa-brands fa-font-awesome" id="icon-developpez-steps" ></i>
-                <p> <strong> Renforcer le sentiment de confiance et d'appartenance  </strong> <br> En favorisant la communication et la compréhension mutuelle des binômes </p>
+                <i class="fa-solid fa-person-rays" id="icon-developpez-steps" ></i>
+                <p> <strong> Coconstruire des parcours individualisés  </strong> <br> Aider le talent à structurer son évolution, en lien avec le référentiel RH de l’organisation </p>
+              </div>
+              <div class="container-icon-and-p-steps">
+                <i class="fa-solid fa-people-arrows" id="icon-developpez-steps" ></i>
+                <p> <strong> Structurer, simplifier l'accompagnement et le suivi </strong> <br> Outiller vos talents et vos managers pour que la coopération soit efficace, en toute autonomie </p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="container-one-step">
+      <div class="container-one-step" id="engager-steps-div">
         <div class="camino-steps">
         <div class="icone-steps-title">
-            <img src="<%= asset_path('engagez-orange.png') %>" loading="eager" sizes="(max-width: 767px) 16vw, 13vw" srcset="<%= asset_path('engagez-orange.png') %> 500w, <%= asset_path('engagez-orange.png') %> 660w" alt="Sticker of a laptop computer." class="icone-each-steps-camino" height="184">
+            <div class="icon-steps-image">
+              <img src="<%= asset_path('engagez-orange.png') %>" loading="eager" sizes="(max-width: 767px) 16vw, 13vw" srcset="<%= asset_path('engagez-orange.png') %> 500w, <%= asset_path('engagez-orange.png') %> 660w" alt="icon with 3 circles nested" class="icone-each-steps-camino" height="184">
+            </div>
             <div class="div-context-steps">
-              <h2 class="presentation-steps-camino-title"><strong>Engagez</strong> </h2>
+              <h2 class="presentation-steps-camino-title"><strong>Engager</strong> </h2>
               <p class="explaination-context-rh"> 81% des DRH sont préoccupés par le départ de leurs collaborateurs. <strong> Mesurer l’humeur générale, récolter les demandes d’évolution permet de cibler les bonnes politiques RH </strong> aux bonnes équipes sans se disperser. </p>
             </div>
           </div>
@@ -141,20 +150,20 @@
             </div>
           <div class="cards-container-explainations">
             <div class="icon-container-explainations">
-              <img src= "https://img.freepik.com/free-photo/happy-dark-skinned-female-student-with-curly-afro-hair-does-hometask-makes-report-draws-sketches-wears-sweatshirt-pose-coworking-space_273609-50654.jpg" style="width:60%">
+              <img src="<%= asset_path('engager-image.jpeg') %> sizes="(max-width: 767px) 16vw, 13vw srcset="<%= asset_path('engager-image.jpeg') %> 500w, <%= asset_path('engager-image.jpeg') %> 660w" alt="3-workers-smiling-in-front-of-the-same-computer" style="width:60%; border:3px solid #e66852;">
             </div>
             <div class="text-explaination-container-steps">
             <div class="container-icon-and-p-steps">
-              <i class="fa-brands fa-font-awesome" id="icon-engagez-steps" ></i>
+              <i class="fa-solid fa-ear-listen" id="icon-engagez-steps" ></i>
+              <p> <strong> Créer un canal d'écoute priviligié </strong> <br> Suivre l’humeur générale de vos équipes pour capter les signaux faibles afin de mieux les comprendre </p>
+            </div>
+            <div class="container-icon-and-p-steps">
+              <i class="fa-solid fa-list-check" id="icon-engagez-steps" ></i>
+              <p> <strong> Gérer les risques internes </strong> <br> Monitorer les risques RH et ajuster vos politiques RH selon vos priorités </p>
+            </div>
+            <div class="container-icon-and-p-steps">
+              <i class="fa-solid fa-person-walking-arrow-right" id="icon-engagez-steps" ></i>
               <p> <strong> Anticiper les évolutions </strong> <br> Mieux comprendre les envies des collaborateurs et anticiper leurs mobilités internes </p>
-            </div>
-            <div class="container-icon-and-p-steps">
-              <i class="fa-brands fa-font-awesome" id="icon-engagez-steps" ></i>
-              <p> <strong> Créer un canal d'écoute priviligié </strong> <br> Suivre l’humeur générale et capter les signaux faibles de votre organisation </p>
-            </div>
-            <div class="container-icon-and-p-steps">
-              <i class="fa-brands fa-font-awesome" id="icon-engagez-steps" ></i>
-              <p> <strong> Gérer les risques internes </strong> <br> Monitoring des risques RH et ajustement de vos politiques selon vos priorités </p>
             </div>
             </div>
           </div>
@@ -167,34 +176,34 @@
 
     <div class="container-global-defi-solution" data-controller="show-answer">
       <h2 id="value-proposition-title"> Répondre ensemble aux enjeux auxquels vous êtes confrontés </h2>
-      <div class="container-minor-defi-solution">
+      <div class="container-minor-defi-solution" data-show-answer-target="closing1" data-action="click->show-answer#hideAnswer">
         <div class="image-defi-solution">
-          <img src="<%= asset_path('projetez-yellow.png') %>" loading="eager" sizes="(max-width: 767px) 16vw, 13vw" srcset="<%= asset_path('projetez-yellow.png') %> 500w, <%= asset_path('projetez-yellow.png') %> 660w" alt="Sticker of a laptop computer." id="defi-solution-icon">
+          <img src="<%= asset_path('defi-solution-image.png') %>" sizes="(max-width: 767px) 16vw, 13vw" srcset="<%= asset_path('defi-solution-image.png') %> 500w, <%= asset_path('defi-solution-image.png') %> 660w" alt="picture representing 3 happy workers" id="defi-solution-icon">
         </div>
-        <div class="defi-solutions">
-          <div class="container-phrase-reponse-defi-solution" data-defi-id="defi-1">
-            <div class="phrase-defi-solutions" data-action="click->show-answer#showAnswer">Diminuer mon taux de turnover</div>
-            <div class="reponse-defi-solution" data-show-answer-target="reponse">Avec Camino donnez des perspectives à vos collaborateurs en les invitant à réfléchir sur leur parcours professionnels et poser leurs prochaines étapes</div>
+        <div class="defi-solutions" >
+          <div class="container-phrase-reponse-defi-solution" data-show-answer-target="closing2">
+            <div class="phrase-defi-solutions" data-show-answer-target="phrase1" data-action="click->show-answer#showAnswer">Diminuer mon taux de turnover</div>
+            <div class="reponse-defi-solution" data-show-answer-target="reponse1">Avec Camino donnez des perspectives à vos collaborateurs en les invitant à réfléchir sur leur parcours professionnels et poser leurs prochaines étapes avec vous et chez vous</div>
           </div>
 
-          <div class="container-phrase-reponse-defi-solution"data-defi-id="defi-2">
-            <div class="phrase-defi-solutions" data-action="click->show-answer#showAnswer">Renforcer la mobilité interne</div>
-            <div class="reponse-defi-solution" data-show-answer-target="reponse"> Camino vous aide à mieux anticiper les désirs de mobilité interne en augmentant le contact RH, en rendant le candidat proactif dans ses recherches et en impliquant les managers référents dans l’élaboration du projet de mobilité </div>
+          <div class="container-phrase-reponse-defi-solution">
+            <div class="phrase-defi-solutions" data-show-answer-target="phrase2" data-action="click->show-answer#showAnswer">Renforcer la mobilité interne</div>
+            <div class="reponse-defi-solution" data-show-answer-target="reponse2"> Camino vous aide à mieux anticiper les désirs de mobilité interne en augmentant le contact RH, en rendant le candidat proactif dans ses recherches et en impliquant les managers référents dans l’élaboration du projet de mobilité </div>
           </div>
 
-          <div class="container-phrase-reponse-defi-solution"data-defi-id="defi-3">
-            <div class="phrase-defi-solutions" data-action="click->show-answer#showAnswer">Anticiper les risques RH au sein de mon organisation</div>
-            <div class="reponse-defi-solution" data-show-answer-target="reponse">Avec Camino donnez des perspectives à vos collaborateurs en les invitant à réfléchir sur leur parcours professionnels et poser leurs prochaines étapes</div>
+          <div class="container-phrase-reponse-defi-solution">
+            <div class="phrase-defi-solutions" data-show-answer-target="phrase3" data-action="click->show-answer#showAnswer">Anticiper les risques RH au sein de mon organisation</div>
+            <div class="reponse-defi-solution" data-show-answer-target="reponse3">Camino permet de nouer un lien de confiance avec vos talents, pour mieux les comprendre et mieux capter les signaux faibles, potentiels irritants</div>
           </div>
 
-          <div class="container-phrase-reponse-defi-solution" data-defi-id="defi-4">
-            <div class="phrase-defi-solutions" data-action="click->show-answer#showAnswer">Accompagner les talents dans leurs désirs d'évolution</div>
-            <div class="reponse-defi-solution" data-show-answer-target="reponse">Avec Camino donnez des perspectives à vos collaborateurs en les invitant à réfléchir sur leur parcours professionnels et poser leurs prochaines étapes</div>
+          <div class="container-phrase-reponse-defi-solution">
+            <div class="phrase-defi-solutions" data-show-answer-target="phrase4" data-action="click->show-answer#showAnswer">Accompagner les talents dans leurs désirs d'évolution</div>
+            <div class="reponse-defi-solution" data-show-answer-target="reponse4">Écouter, comprendre et orienter vos talents dans votre organisation avec une méthodologie éprouvée</div>
           </div>
 
-          <div class="container-phrase-reponse-defi-solution" data-defi-id="defi-5">
-            <div class="phrase-defi-solutions" data-action="click->show-answer#showAnswer">Épauler les managers dans leur rôle</div>
-            <div class="reponse-defi-solution" data-show-answer-target="reponse">Avec Camino donnez des perspectives à vos collaborateurs en les invitant à réfléchir sur leur parcours professionnels et poser leurs prochaines étapes</div>
+          <div class="container-phrase-reponse-defi-solution">
+            <div class="phrase-defi-solutions" data-show-answer-target="phrase5" data-action="click->show-answer#showAnswer">Épauler les managers dans leur rôle</div>
+            <div class="reponse-defi-solution" data-show-answer-target="reponse5">Camino offre un cadre pour appuyer efficacement le rôle d'accompagnateur de vos managers</div>
           </div>
         </div>
       </div>
@@ -203,7 +212,7 @@
 
   <div class="container-why-camino">
     <h2 class="why-camino-title"> <strong> 4 raisons de choisir Camino  </strong></h2>
-    <p class="why-camino-subtitle"> Afin de vous proposer un service adapté à vos besoins,  </p>
+    <p class="why-camino-subtitle"> Afin de vous proposer un service adapté à vos besoins, nous f </p>
     <ul role="list" class="hiw-component slide-up">
     <li class="hiw-child slide-1" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
     <div class="blockquote">
@@ -211,7 +220,7 @@
     </div>
     <div class="hiw-content">
     <h4 class="heading-5 margin-bottom-8">Une méthode de bout en bout</h4>
-    <p class="margin-bottom-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></li>
+    <p class="margin-bottom-0">Notre proposition de valeur s'articule autour </p></div></li>
     <li class="hiw-child slide-2" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
     <div class="blockquote">
       <i class="fa-brands fa-font-awesome" id="icon-why-camino" ></i>
@@ -221,17 +230,17 @@
     <p class="margin-bottom-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></li>
     <li class="hiw-child slide-3" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
     <div class="blockquote">
-      <i class="fa-brands fa-font-awesome" id="icon-why-camino" ></i>
+      <i class="fa-solid fa-street-view" id="icon-why-camino" ></i>
     </div>
     <div class="hiw-content">
-    <h4 class="heading-5 margin-bottom-8">Une expérience immersive</h4>
-    <p class="margin-bottom-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div></li>
+    <h4 class="heading-5 margin-bottom-8">Une expérience humaine avant tout</h4>
+    <p class="margin-bottom-0">Nous favorisons la communication et la compréhension mutuelle des binômes</p></div></li>
     <li class="hiw-child slide-4" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
     <div class="blockquote">
       <i class="fa-solid fa-users-viewfinder" id="icon-why-camino" ></i>
     </div>
     <div class="hiw-content">
-    <h4 class="heading-5 margin-bottom-8">Une solution adaptable</h4>
+    <h4 class="heading-5 margin-bottom-8">Une solution adaptable et adaptée</h4>
     <p class="margin-bottom-0"> Votre entreprise et vos équipes sont uniques, nous proposons donc un service sur-mesure</p></div></li></ul>
   </div>
 
@@ -240,9 +249,9 @@
     <div class="ending-transition">
     </div>
 
-    <div class="container-cta", style="text-align: center; margin-bottom:56px; margin-top:100px;">
+    <div class="container-cta", style="text-align: center; margin-bottom:56px; margin-top:120px;">
         <h2 class="cta-title"> <strong> Vous souhaitez en savoir plus ? </strong> </h2>
-        <p class="cta-subtitle" style="margin-bottom: 48px; margin-top: 24px",>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <%# <p class="cta-subtitle" style="margin-bottom: 48px; margin-top: 24px",>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> %>
       <%= link_to "PRENONS CONTACT", new_client_path, class: "btn savoir-plus"%>
     </div>
 

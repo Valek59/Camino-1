@@ -3,6 +3,28 @@
   margin-right: 30px;
 }
 
+.total-value-proposition a {
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.card-value-proposition-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 .arrow-transition-steps {
   background-color: #FFF2CC;
   padding-top: 30px;
@@ -33,6 +55,7 @@
 }
 
 .text-explaination-container-steps {
+  margin: auto;
   margin-left: -50px;
   justify-items: start;
 }
@@ -44,26 +67,28 @@
 }
 
 .camino-3-steps-title {
-  padding-top: 160px;
+  padding-top: 120px;
   text-align: center;
   font-size: 60px;
   font-weight: 2000;
-  padding-bottom: 16px;
 }
 
 .presentation-steps-camino-color {
   border-radius: 16px;
   padding: 16px;
   background-color: #FFF2CC;
+  padding-bottom: 60px;
 }
 
 .container-icon-and-p-steps{
+  margin: auto;
   display: flex;
   gap: 30px;
   font-size: 16px;
   margin-top: 24px;
   & p {
     width: 80%;
+    margin: auto;
   }
   & i {
     align-items: center;
@@ -125,11 +150,20 @@
   text-align: center;
   font-weight: 500;
   padding-bottom: 16px;
+  font-size: 18px;
 }
 
 .presentation-steps-camino-title {
   margin-top: 20px;
   font-weight: 800;
+}
+
+.icon-steps-image {
+  width: 180px;
+  height: 100px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 

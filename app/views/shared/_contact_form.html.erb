@@ -1,15 +1,15 @@
 
 <div class="contact-form-all">
   <div class="contact-form-title">
-    <h2> <strong> Prenons contact </strong> </h2>
-    <p> Notre ambition est de réinventer l'expérience collaborateur. Vous souhaitez en savoir plus ?  </p>
+    <h2 class="prenons-contact-title-form"> <strong> Prenons contact </strong> </h2>
+    <p> Notre ambition est de réinventer l'expérience collaborateur. <br> Vous souhaitez en savoir plus ?  </p>
   </div>
 
   <div class="contact-form">
     <%= simple_form_for @client do |f| %>
       <div class="first-last-name">
-      <%= f.input :first_name, label: "Prénom" %>
-      <%= f.input :last_name, label: "Nom" %>
+      <%= f.input :first_name, label: "Prénom", input_html: { id: "form-name-input" }%>
+      <%= f.input :last_name, label: "Nom", input_html: { id: "form-name-input" }%>
       </div>
       <%= f.input :company, label: "Entreprise" %>
       <%# <%= f.input :role, label: "Votre rôle" %>

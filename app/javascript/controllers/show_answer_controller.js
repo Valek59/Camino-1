@@ -2,53 +2,39 @@
 import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
-  static targets = ["reponse"];
+  static targets = ["closing1", "closing2", "reponse1", "reponse2", "reponse3", "reponse4", "reponse5", "phrase1", "phrase2", "phrase3", "phrase4", "phrase5"];
 
   showAnswer(event) {
-    const container = event.currentTarget.closest(".container-phrase-reponse-defi-solution");
-    const defiId = container.dataset.defiId;
-    const reponse = container.querySelector(".reponse-defi-solution");
-    const isVisible = reponse.classList.contains("visible");
-
-    if (!isVisible) {
-      reponse.textContent = this.getReponseForDefi(defiId); // récupérer la réponse correspondante
-      reponse.classList.add("anim-top-to-bottom", "visible");
-      document.addEventListener("click", (event) => this.hideAnswer(event));
+    const removeActiveClasses = () => {
+      const answers = document.querySelectorAll(".reponse-defi-solution");
+      answers.forEach(answer => {
+          answer.classList.remove('anim-top-to-bottom');
+          answer.classList.add('hide');
+      });
     }
+
+    removeActiveClasses();
+    if (event.target === this.phrase1Target) {
+      this.reponse1Target.classList.toggle("anim-top-to-bottom");
+    } else if (event.target === this.phrase2Target) {
+      this.reponse2Target.classList.toggle("anim-top-to-bottom");
+    } else if (event.target === this.phrase3Target) {
+      this.reponse3Target.classList.toggle("anim-top-to-bottom");
+    } else if (event.target === this.phrase4Target) {
+      this.reponse4Target.classList.toggle("anim-top-to-bottom");
+    } else if (event.target === this.phrase5Target) {
+      this.reponse5Target.classList.toggle("anim-top-to-bottom")};
   }
 
-  getReponseForDefi(defiId) {
-    // ici, vous pouvez retourner la réponse correspondant à l'identifiant de défi donné
-    switch (defiId) {
-      case "defi-1":
-        return "Réponse pour le défi 1";
-      case "defi-2":
-        return "Réponse pour le défi 2";
-      case "defi-3":
-        return "Réponse pour le défi 3";
-      case "defi-4":
-        return "Réponse pour le défi 4";
-      case "defi-5":
-        return "Réponse pour le défi 5";
-      // ajoutez des cas pour chaque défi
-      default:
-        return ""; // retourne une chaîne vide si l'identifiant de défi est inconnu
-    }
-  }
-
-  hideAnswer(event) {
-    event.preventDefault()
-    reponse.textContent = this.getReponseForDefi(defiId); // récupérer la réponse correspondante
-    // Ignore event if clicked within element
-    if(this.reponse.textContent === event.reponseTarget || this.reponseTarget.contains(event.target)) return;
-
-    // Execute the actual action we're interested in
-    this.reponseTarget.classList.remove("visible", "anim-top-to-bottom");
-    setTimeout(() => {
-      this.reponseTarget.style.display = "none";
-      this.reponseTarget.style.transform = "translateY(-10px)";
-    }, 200);
-  }
+  hideAnswer(e) {
+    const answers = document.querySelectorAll(".reponse-defi-solution");
+    if (e.target.contains(this.closing1Target) && e.target!== this.closing2Target) {
+      console.log("hello")
+      answers.forEach((answer) => {
+      answer.classList.remove("anim-top-to-bottom");
+    });
+  };
+}
 }
 
 // export default class extends Controller {

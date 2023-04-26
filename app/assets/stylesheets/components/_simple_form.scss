@@ -1,17 +1,24 @@
 .contact-form-all {
   display: flex;
+  margin-top: 30px;
 }
 
 .contact-form-title {
   text-align: center;
   vertical-align: auto;
   width: 50%;
+  margin-left: 24px;
+  margin: auto;
+}
+
+.prenons-contact-title-form {
+  margin-bottom: 5%;
 }
 
 .contact-form {
   padding: 0 32px 0px 32px;
   width: 40%;
-  margin-left: 60px;
+  margin-right: 8%;
   border-radius: 16px;
   box-shadow: 0 1px 2px 0 #272727;
   border : 1px solid #272727;
@@ -31,7 +38,11 @@ form {
 
 .first-last-name {
   display: flex;
-  justify-content: space-between;
+  gap: 80px;
+}
+
+#form-name-input {
+  width: 130%;
 }
 
 input[type="text"], input[type="email"], input[type="tel"], select {
@@ -50,6 +61,7 @@ label {
   margin-bottom: 5px;
   font-size: 16px;
   font-weight: bold;
+  margin-top: 8px;
 }
 
 input[type="submit"] {
@@ -61,6 +73,8 @@ input[type="submit"] {
   font-size: 16px;
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  font-weight: bold;
 }
 
 input[type="submit"]:hover {
