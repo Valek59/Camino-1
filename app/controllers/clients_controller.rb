@@ -3,11 +3,15 @@ class ClientsController < ApplicationController
     @client = Client.new
   end
 
-  def accompagnement
+  def mentions_legales
     @client = Client.new
   end
 
   def pilotage
+    @client = Client.new
+  end
+
+  def new
     @client = Client.new
   end
 
@@ -18,5 +22,11 @@ class ClientsController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
+  end
+
+  private
+
+  def client_params
+    params.require(:client).permit(:name, :email, :phone, :message)
   end
 end

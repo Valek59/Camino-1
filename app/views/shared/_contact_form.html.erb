@@ -1,11 +1,21 @@
-<%= simple_form_for @client do |f| %>
-  <%= f.input :first_name, label: "Prénom" %>
-  <%= f.input :last_name, label: "Nom" %>
-  <%= f.input :company, label: "Entreprise" %>
-  <%= f.input :role, label: "Votre rôle" %>
-  <%= f.input :pro_email, label: "Email professionnel" %>
-  <%= f.input :phone_number, label: "Numéro de téléphone" %>
-  <%= f.input :contact_preference, label: "Préferences de contact" %>
-  <%= f.input :how_know_camino, label:"Comment avez-vous connu Camino?" %>
-  <%= f.submit "Submit", label:"valider" %>
-<% end %>
+
+<div class="contact-form-all">
+  <div class="contact-form-title">
+    <h2 class="prenons-contact-title-form"> <strong> Prenons contact </strong> </h2>
+    <p> Notre ambition est de réinventer l'expérience collaborateur. <br> Vous souhaitez en savoir plus ?  </p>
+  </div>
+
+  <div class="contact-form">
+    <%= simple_form_for @client do |f| %>
+      <div class="first-last-name">
+      <%= f.input :first_name, label: "Prénom", input_html: { id: "form-name-input" }%>
+      <%= f.input :last_name, label: "Nom", input_html: { id: "form-name-input" }%>
+      </div>
+      <%= f.input :company, label: "Entreprise" %>
+      <%# <%= f.input :role, label: "Votre rôle" %>
+      <%= f.input :pro_email, label: "Email professionnel" %>
+      <%= f.input :phone_number, label: "Numéro de téléphone" %>
+      <%= f.submit " Valider " %>
+    <% end %>
+  </div>
+</div>

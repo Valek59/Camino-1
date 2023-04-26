@@ -1,0 +1,76 @@
+.full-image-banner-component {
+  display: flex;
+  width: 90%;
+  margin: 80px 70px 120px 70px;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 2.5rem;
+  gap: 70px;
+}
+
+.banner-child banner-circle {
+  position: relative;
+  & img {
+    border: 0;
+    max-height: 150px;
+    vertical-align: middle;
+    display: inline-block;
+    overflow-clip-margin: content-box;
+}
+& .banner-wide {
+  aspect-ratio: 16 / 9;
+}
+}
+
+.banner-child banner-wide {
+  height: 16vw;
+  flex: 0 0 auto;
+}
+
+.banner-child banner-circle {
+
+}
+.perks-card-image, .banner-circle, ._2-col-list-image {
+  aspect-ratio: var(--ratio-100);
+}
+.image-cover.circle-image.origin-right-circle {
+  -o-object-position: 100% 50%;
+  object-position: 100% 50%;
+}
+.image-cover.circle-image {
+  border-radius: 50rem;
+}
+
+.banner-child tall-pill {
+
+}
+
+.tall-pill {
+  aspect-ratio: 4 / 5;
+}
+.image-cover.pill-image {
+  border-radius: 50rem;
+}
+.image-cover {
+  // position: absolute;
+  left: 0;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  display: block;
+  overflow: hidden;
+  // width: 100%;
+  // height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  overflow-clip-margin: content-box;
+
+}

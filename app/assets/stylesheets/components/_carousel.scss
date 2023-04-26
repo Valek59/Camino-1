@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('/assets/fonts/Avenir.ttf') format('truetype');
+}
+
+.carousel {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 300px;
+}
+
+.carousel-container {
+  display: flex;
+  width: calc(100% * 6);
+  transition: transform 0.5s ease;
+}
+
+.carousel-card {
+  width: calc(100% / 6);
+  padding: 20px;
+  text-align: center;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}

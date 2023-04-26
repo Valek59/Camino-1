@@ -1,15 +1,19 @@
 <nav class="navbar-top" data-controller="navbar">
-  <h1 class="title-logo"><strong> Camino </strong></h1>
+  <%# <h1 class="title-logo"><strong> Camino </strong> %>
+  <%= link_to "Camino", developpement_path, class: "title-logo" %>
 
   <ul class="list-inline tabs-underlined">
     <li>
-      <a href="#" class="tab-underlined active">Développement professionnel</a>
+      <%# <a href="#" class="tab-underlined active">Développement professionnel</a>
     </li>
     <li>
       <a href="#" class="tab-underlined">Accompagnement managérial</a>
     </li>
     <li>
-      <a href="#" class="tab-underlined">Pilotage de carrière</a>
+      <a href="#" class="tab-underlined">Pilotage de carrière</a> %>
+        <%= link_to "PRENONS CONTACT", new_client_path, class: "btn savoir-plus" %>
+
+
     </li>
   </ul>
 

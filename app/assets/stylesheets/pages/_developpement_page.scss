@@ -2,13 +2,33 @@
   font-family: 'Avenir';
   src: url('/assets/fonts/Avenir.ttf') format('truetype');
 }
+
+.banner-website-camino {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image-banner-website-camino {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  overflow-clip-margin: content-box;
+  height: 330PX;
+  margin-bottom: 130px;
+}
+
+
 .total-value-proposition {
   width: 100%;
-  background-color: #272727;
-  margin-top: 50px;
+  background-color: #FFF2CC;
+  margin-top: 200px;
+  margin-bottom: 150px;
   border-radius: 16px;
-  padding: 8px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  padding-bottom: 40px;
+  box-shadow: var(--small-shadow);
+  margin: auto;
+  padding: 30px 0 100px 0;
   & h2 {
     padding-left: 40px;
     padding-top: 24px;
@@ -17,8 +37,8 @@
 
 .cards-global-value {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  height: 420px;;
   gap: 40px; /* Adjust the gap as per your design */
   max-width: 100%; /* ajuster la largeur maximale de la grille en fonction de vos besoins */
   margin: 0 auto; /* centrer la grille horizontalement */
@@ -27,32 +47,67 @@
 }
 
 .value-proposition {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
+  border-radius: 16px;
+  box-shadow: var(--small-shadow);
   overflow: hidden;
   width: 90%;
-  height: 400px;
-  border: 2px solid #FEF7E6;
+  height: 430px;
+  border: 1px solid  black;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  // border-bottom: 2px solid  black;
+  // border-right: 2px solid  black;
+    & h3 {
+    font-size: 18px;
+    align-items: center;
+  }
+  & p {
+    font-size: 16px;
+    margin-top: 50px;
+  }
+}
+
+.value-proposition:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+h2.value-proposition-title-cards {
+  font-size: 42px;
+  padding-top: 80px ;
+  padding-bottom: 50px;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: 600;
+  color: #272727;
 }
 
 h2.value-proposition-title {
-  padding-top: 32px ;
-  padding-left: 40px;
-  font-weight: bold;
-  color: #FEF7E6;
+  font-size: 42px;
+  padding-top: 120px ;
+  padding-bottom: 50px;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: 600;
+  color: #272727;
 }
 
 .first-title {
-  font-size: 42px;
-  margin-top: 24px;
-
+  margin: 24px 70px 10px 70px;
+  text-align: center;
+  padding: 0;
+  color:  #272727;
+  font-size: 60px;
+  font-weight: 2000;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .phrase-accroche {
-  margin: 40px 0 40px 0;
+  margin: 20px 70px 20px 70px;
   font-size: 24px;
 }
 
@@ -67,17 +122,54 @@ h2.value-proposition-title {
 
 .value-proposition-image img {
   object-fit: cover;
-  height: 100%;
+  position: absolute;
+  height: 200px;
   width: 100%;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .value-proposition-content {
   padding: 0 20px 0 20px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .card-value-proposition-title {
-  font-size: 24px;
-  color: #333333;
+  position: relative;
+  align-items: center;
+  font-size: 12px;
+  color: #272727;
+  margin: auto;
+  margin-top: 30px;
+  width: 200px;
+  border-radius: 16px;
+  padding: 8px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  & a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+#title-projetez {
+  background-color: #FFBA40;
+}
+
+#title-developpez {
+  background-color: #475177;
+}
+
+#title-engagez {
+  background-color: #e66852;
+}
+
+.value-proposition h3, .value-proposition .h3 {
+  font-size: 18px;
+  align-items: center;
+  margin-top: -20px;
+  background-color:  #FFBA40;
+  color: black;
 }
 
 @media screen and (max-width: 767px) {
@@ -87,4 +179,27 @@ h2.value-proposition-title {
     grid-template-rows: repeat(4, auto);
     max-width: 90%; /* ajuster la largeur maximale de la grille pour les écrans plus petits */
   }
+}
+
+
+--------------------------------STEPS-CONTAINER-EXPLAINATION---------------------
+.cards-container-explainations {
+  display: flex;
+}
+
+---------------------------------VOUS-SOUHAITEZ-EN-SAVOIR-PLUS---------------------
+
+.container-cta{
+  margin-bottom: 56px;
+}
+
+.cta-title {
+  margin-bottom: 56px;
+}
+
+.ending-transition {
+  width: 20%;
+  border-bottom: 2px solid black;
+  align-items: center;
+  margin: auto;
 }
