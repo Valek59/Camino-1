@@ -2,11 +2,9 @@
 # It provides methods for retrieving a list of all clients or an individual client by ID.
 class ClientsController < ApplicationController
   def developpement
-
   end
 
   def mentions_legales
-
   end
 
   def pilotage
@@ -29,6 +27,6 @@ class ClientsController < ApplicationController
   private
 
   def client_params
-    params.require(:client).permit(:name, :email, :phone, :message)
+    params.require(:client).permit(:first_name, :last_name, :company, :role, :pro_email, :phone_number)
   end
 end
