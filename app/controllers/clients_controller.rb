@@ -1,3 +1,5 @@
+# The ClientsController handles requests related to clients in the system.
+# It provides methods for retrieving a list of all clients or an individual client by ID.
 class ClientsController < ApplicationController
   def developpement
     @client = Client.new
