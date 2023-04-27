@@ -2,11 +2,11 @@
 # It provides methods for retrieving a list of all clients or an individual client by ID.
 class ClientsController < ApplicationController
   def developpement
-    @clients = Client.new
+    @client = Client.new
   end
 
   def mentions_legales
-    @clients = Client.new
+    @client = Client.new
   end
 
   def pilotage

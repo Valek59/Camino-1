@@ -9,7 +9,6 @@ class CreateClients < ActiveRecord::Migration[7.0]
       t.string :contact_preference
       t.string :phone_number
       t.string :how_know_camino
-
       t.timestamps
     end
   end
