@@ -7,10 +7,6 @@ class ClientsController < ApplicationController
   def mentions_legales
   end
 
-  def pilotage
-    @client = Client.new
-  end
-
   def new
     @client = Client.new
   end
