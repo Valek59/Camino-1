@@ -12,7 +12,7 @@ class ClientsController < ApplicationController
   end
 
   def create
-    @client = Client.new
+    @client = Client.new(client_params)
     if @client.save
       redirect_to developpement_path notice: "Votre demande de prise de contact a bien été enregistrée"
     else
@@ -23,6 +23,6 @@ class ClientsController < ApplicationController
   private
 
   def client_params
-    params.require(:client).permit(:first_name, :last_name, :company, :role, :pro_email, :phone_number)
+    params.require(:client).permit(:first_name, :last_name, :company, :role, :pro_email, :phone_number).to_h
   end
 end

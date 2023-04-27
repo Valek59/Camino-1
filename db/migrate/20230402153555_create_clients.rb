@@ -1,5 +1,4 @@
 class CreateClients < ActiveRecord::Migration[7.0]
-  enable_extension "plpgsql"
   def changes
     create_table :clients do |t|
       t.string :first_name
