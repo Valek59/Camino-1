@@ -20,9 +20,3 @@ module Camino1
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
-
-Rails.application.configure do
-  config.active_support.deprecation = :silence
-
-  # Other configuration options...
-end
