@@ -17,9 +17,21 @@
     color:#272728;
 }
 
+@media only screen and (max-width: 576px) {
+  .layout {
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "";
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .layout {
-    grid-template-rows: 56px auto auto auto 56px;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-columns: 1fr;
     grid-template-areas:
     "a"
