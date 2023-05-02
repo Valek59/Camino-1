@@ -1,195 +1,4 @@
 
-
-
-
-// #arrow-left-transition-steps {
-//   position: absolute;
-//   transform: translateY(-50%);
-//   padding-bottom: 10vh;
-//   left: 10vw;
-//   transform: scaleX(-1);
-// }
-
-// .text-explaination-container-steps {
-//   margin: auto;
-//   margin-left: -50px;
-//   justify-items: start;
-// }
-
-// .explaination-context-rh {
-//   font-size: 1.3rem;
-//   margin-bottom: -10px;
-//   margin-top: 16px;
-// }
-
-// .camino-3-steps-title {
-//   padding-top: 120px;
-//   text-align: center;
-//   font-size: 4rem;
-//   font-weight: 2000;
-// }
-
-// .presentation-steps-camino-color {
-//   border-radius: 16px;
-//   padding: 16px;
-//   background-color: #FFF2CC;
-//   padding-bottom: 60px;
-// }
-
-// .container-icon-and-p-steps{
-//   margin: auto;
-//   display: flex;
-//   flex-direction: column;
-//   gap: 30px;
-//   font-size: 1.1rem;
-//   margin-top: 24px;
-// }
-// .container-icon-and-p-steps p {
-//   width: 80%;
-//   margin: auto;
-// }
-// .container-icon-and-p-steps i {
-//   display: flex;
-//   align-items: center;
-// }
-
-// .div-context-steps {
-//   margin-right: 50px;
-//   margin-left: 50px;
-//   margin-bottom: 24px;
-// }
-
-// .icone-steps-title {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin-bottom: 30px;
-// }
-
-// .icone-steps-title img {
-//   height: 150px;
-// }
-
-// .icone-each-steps-camino {
-//   border-radius: 50rem;
-//   width: 100%;
-//   height: 200px;
-//   object-fit: cover;
-//   overflow: hidden;
-//   overflow-clip-margin: content-box;
-// }
-
-// #icon-projetez-steps {
-//   margin: auto;
-//   background-color: #FFBA40;
-//   color: white;
-//   border-radius: 25%;
-//   padding: 16px;
-//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-// }
-
-// #icon-developpez-steps {
-//   margin: auto;
-//   background-color: #475177;
-//   color: white;
-//   border-radius: 25%;
-//   padding: 16px;
-//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-// }
-
-
-// #icon-engagez-steps {
-//   margin: auto;
-//   background-color:  #e66852;
-//   color: white;
-//   border-radius: 25%;
-//   padding: 16px;
-//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-// }
-
-// .phrase-steps {
-//   margin-bottom: 40px;
-//   text-align: center;
-//   font-weight: 500;
-//   padding-bottom: 16px;
-//   font-size: 1.5rem;
-// }
-
-// .presentation-steps-camino-title {
-//   margin-top: 20px;
-//   font-weight: 800;
-// }
-
-// .icon-steps-image {
-//   width: 100%;
-//   height: auto;
-//   margin-top: 20px;
-//   margin-bottom: 20px;
-// }
-
-// @media only screen and (max-width: 768px) {
-//   .camino-steps {
-//     color: #272728;
-//     border-radius: 16px;
-//     padding: 5px 20px;
-//     margin: 0 20px;
-//     font-size: 14px;
-//   }
-
-//   .container-one-step {
-//     margin-top: 16px;
-//   }
-
-//   .cards-container-explainations {
-//     display: grid;
-//     grid-template-columns: 1fr;
-//     margin: 40px 0;
-//     border-radius: 16px;
-//   }
-
-//   .cards-container-explainations-developpez {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     margin: 40px 0;
-//     border-radius: 16px;
-//   }
-
-//   .cards-container-explainations-engagez {
-//     display: flex;
-//     justify-content: center;
-//     margin: 40px 0;
-//     border-radius: 16px;
-//   }
-
-//   .icon-container-explainations img {
-//     border-radius: 16px;
-//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-//   }
-
-//   .icon-container-explainations {
-//     margin-right: 0;
-//   }
-
-//   .ul-title-container-steps {
-//     padding-top: 5%;
-//   }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .context-steps {
   margin-left: 5vw;
   margin-right: 5vw;
@@ -197,8 +6,8 @@
 
 .total-value-proposition a {
   text-decoration: none;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
   padding-left: 3vh;
   padding-right: 3vh;
   text-align: center;
@@ -242,25 +51,25 @@
 #arrow-left-transition-steps {
   position: absolute;
   transform: translateY(-50%);
-  padding-bottom: 60px;
-  left: 200px;
+  padding-bottom: 10vh;
+  left: 10vw;
   transform: scaleX(-1);
 }
 
 .text-explaination-container-steps {
   margin: auto;
-  margin-left: -50px;
+  margin-left: -5vw;
   justify-items: start;
 }
 
 .explaination-context-rh {
   font-size: 1.3rem;
-  margin-bottom: -10px;
-  margin-top: 16px;
+  margin-bottom: -1vh;
+  margin-top: 2vh;
 }
 
 .camino-3-steps-title {
-  padding-top: 120px;
+  padding-top: 12vh;
   text-align: center;
   font-size: 4rem;
   font-weight: 2000;
@@ -270,15 +79,15 @@
   border-radius: 16px;
   padding: 16px;
   background-color: #FFF2CC;
-  padding-bottom: 60px;
+  padding-bottom: 6vh;
 }
 
 .container-icon-and-p-steps{
   margin: auto;
   display: flex;
-  gap: 30px;
+  gap: 3vw;
   font-size: 1.1rem;
-  margin-top: 24px;
+  margin-top: 3vh;
   & p {
     width: 80%;
     margin: auto;
@@ -289,22 +98,22 @@
 }
 
 .div-context-steps {
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-bottom: 24px;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  margin-bottom: 3vh;
 }
 
 .icone-steps-title {
   display: flex;
   & img {
-    height: 150px;
+    height: 15vh;
     margin-top: auto;
   }
 }
 
 .icone-each-steps-camino {
   border-radius: 50rem;
-  width: 200px;
+  width: 20vw;
   object-fit: cover;
   overflow: hidden;
   overflow-clip-margin: content-box;
@@ -338,25 +147,37 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 600px) {
+  #icon-developpez-steps {
+    padding: 8px;
+  }
+  #icon-projetez-steps {
+    padding: 8px;
+  }
+  #icon-engagez-steps {
+    padding: 8px;
+  }
+}
+
 .phrase-steps {
-  margin-bottom: 40px;
+  margin-bottom: 4vh;
   text-align: center;
   font-weight: 500;
-  padding-bottom: 16px;
+  padding-bottom: 2vh;
   font-size: 1.5rem;
 }
 
 .presentation-steps-camino-title {
-  margin-top: 20px;
+  margin-top: 2vh;
   font-weight: 800;
 }
 
 .icon-steps-image {
-  width: 180px;
-  height: 100px;
+  width: 18vw;
+  height: 10vh;
   margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
 
@@ -370,7 +191,7 @@
 }
 
 .container-one-step {
-  margin-top: 24px;
+  margin-top: 3vh;
 }
 
 .cards-container-explainations {
