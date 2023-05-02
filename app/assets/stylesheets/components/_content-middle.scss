@@ -22,16 +22,16 @@
 
 /* Styles for screens with a maximum width of 768px */
 
+
 @media (max-width: 576px) {
   .layout {
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "a"
-    "b"
-    "c";
+    display: block;
+  }
+  .layout > div {
+    margin-bottom: 1rem;
   }
 }
+
 
 @media (max-width: 768px) {
   .layout {
