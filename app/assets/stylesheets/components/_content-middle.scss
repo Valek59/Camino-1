@@ -45,10 +45,12 @@
   /* Styles for screens with a maximum width of 768px */
   @media (max-width: 768px) {
     padding: 30px 16px 50px 16px;
+    width: 100%;
   }
 
     /* Styles for screens with a maximum width of 576px */
     @media (max-width: 576px) {
       padding: 15px 8px 20px 8px;
+      width: 100%;
     }
 }

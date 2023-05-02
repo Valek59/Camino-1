@@ -1,28 +1,26 @@
-@media (max-width: 767px) {
-  .responsive {
-  width: 16vw;
-  }
-}
-.responsive {
-  width: 13vw;
-}
-
-
 @media screen and (max-width: 768px) {
   .first-title {
-    font-size: 4rem;
-  }
-  .h1 {
-    font-size: 3rem;
-  }
+      margin: 24px 70px 10px 70px;
+      text-align: center;
+      padding: 0;
+      color:  #272728;
+      font-size: 4rem;
+      font-weight: 2000;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
 }
 
 @media screen and (max-width: 480px) {
   .first-title {
+    margin: 24px 70px 10px 70px;
+    text-align: center;
+    padding: 0;
+    color:  #272728;
     font-size: 1.2rem;
-  }
-  .h1 {
-    font-size: 1.2rem;
+    font-weight: 2000;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -46,16 +44,7 @@
   margin-bottom: 130px;
 }
 
-.first-title {
-  margin: 24px 70px 10px 70px;
-  text-align: center;
-  padding: 0;
-  color:  #272728;
-  font-size: 4rem;
-  font-weight: 2000;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
+
 
 .phrase-accroche {
   margin: 20px 70px 20px 70px;
