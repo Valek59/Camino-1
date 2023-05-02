@@ -6,9 +6,7 @@ one:
   company: MyString
   role: MyString
   pro_email: MyString
-  contact_preference: MyString
   phone_number: MyString
-  how_know_camino: MyString
 
 two:
   first_name: MyString
@@ -16,6 +14,4 @@ two:
   company: MyString
   role: MyString
   pro_email: MyString
-  contact_preference: MyString
   phone_number: MyString
-  how_know_camino: MyString
