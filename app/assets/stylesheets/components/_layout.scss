@@ -21,10 +21,6 @@
   .layout {
     grid-template-rows: auto auto auto auto auto;
     grid-template-columns: 1fr;
-    grid-template-areas:
-    "a"
-    "b"
-    "c";
     width:100%;
   }
 }
