@@ -22,13 +22,9 @@
 
 /* Styles for screens with a maximum width of 768px */
 
-
 @media (max-width: 576px) {
   .layout {
-    display: block;
-  }
-  .layout > div {
-    margin-bottom: 1rem;
+    grid-template-columns: 1fr;
   }
 }
 
