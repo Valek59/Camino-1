@@ -1,3 +1,72 @@
+// .content-middle{
+//   grid-area: b;
+//   background-color: #FEF7E6;
+//   min-height: calc(100vh - 112px);
+//   width: 100%;
+//   box-sizing: border-box;
+//   border-radius: 15px;
+//   padding: 30px 0 50px 0 ;
+//   position: relative;
+//   color: black;
+//   font-family: "Avenir", sans-serif;
+//   margin-top: 20px;
+//   & h2 {
+//     font-size: 3rem;
+//   }
+//   & h3 {
+//     padding-top: 8px;
+//     padding-bottom: 8px;
+//     text-align: center;
+//   }
+// }
+
+/* Styles for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .layout {
+    grid-template-rows: 56px auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "a"
+    "b"
+    "c";
+  }
+}
+
+/* Styles for screens with a minimum width of 769px */
+@media (min-width: 769px) {
+  .layout {
+    grid-template-rows: 56px auto 56px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "a a a"
+    "b b b"
+    "c c c";
+  }
+}
+
+.tabs-underlined {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Add this to wrap tabs onto multiple lines if necessary */
+}
+
+.tabs-underlined .tab-underlined {
+  color: black;
+  font-family: "Avenir", sans-serif;
+  padding: 8px;
+  margin: 8px;
+  opacity: .4;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+  white-space: nowrap; /* Add this to prevent tabs from breaking onto multiple lines */
+}
+
+.tabs-underlined .tab-underlined.active {
+  opacity: 1;
+  border-bottom: 3px solid #555555;
+}
+
 .content-middle{
   grid-area: b;
   background-color: #FEF7E6;
@@ -10,6 +79,7 @@
   color: black;
   font-family: "Avenir", sans-serif;
   margin-top: 20px;
+
   & h2 {
     font-size: 3rem;
   }
@@ -17,5 +87,10 @@
     padding-top: 8px;
     padding-bottom: 8px;
     text-align: center;
+  }
+
+  /* Styles for screens with a maximum width of 768px */
+  @media (max-width: 768px) {
+    padding: 30px 16px 50px 16px;
   }
 }
