@@ -27,6 +27,7 @@
 }
 
 .arrow-transition-steps {
+  margin-top: 5vh;
   background-color: #FFF2CC;
   padding-top: 5vh;
 }
@@ -212,7 +213,7 @@
   }
 }
 
-@media (max-width: 480px) { /* adjust for phones */
+@media (max-width: 576px) { /* adjust for phones */
   .cards-container-explainations {
     grid-template-columns: 1fr;
     margin: 10px 0 20px 0;

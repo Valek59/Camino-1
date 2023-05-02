@@ -29,18 +29,6 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .layout {
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "a"
-    "b"
-    "c"
-    "";
-  }
-}
-
 .tabs-underlined {
   display: flex;
   align-items: center;
