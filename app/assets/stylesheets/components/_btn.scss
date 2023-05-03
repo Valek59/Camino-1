@@ -1,11 +1,29 @@
-.btn {
-  background-color: #FFBA40;
-  padding:10px 24px 10px 24px;
-  border-radius: 16px;
-  color: #272728;
-  font-weight: 800;
+// Destop format
+@media screen and (min-width: 768px) {
+  .btn {
+    background-color: #FFBA40;
+    padding:10px 24px 10px 24px;
+    border-radius: 16px;
+    color: #272728;
+    font-weight: 800;
+  }
+
+  .btn .savoir-plus :hover {
+    border: 2px solid #272728;
+  }
 }
 
-.btn .savoir-plus :hover {
-  border: 2px solid #272728;
+// Mobile format
+@media screen and (min-width: 768px) {
+  .btn {
+    background-color: #FFBA40;
+    padding:5px 15px 5px 15px;
+    border-radius: 16px;
+    color: #272728;
+    font-weight: 800;
+  }
+
+  .btn .savoir-plus :hover {
+    border: 2px solid #272728;
+  }
 }
