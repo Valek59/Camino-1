@@ -68,7 +68,7 @@
   .container-icon-and-p-steps{
     margin: auto;
     display: flex;
-    gap: 3vw;
+    gap: 8vw;
     font-size: 1.1rem;
     margin-top: 3vh;
     & p {
@@ -172,13 +172,13 @@
   }
 
   #icon-developpez-steps {
-    padding: 8px;
+    padding: 16px;
   }
   #icon-projetez-steps {
-    padding: 8px;
+    padding: 16px;
   }
   #icon-engagez-steps {
-    padding: 8px;
+    padding: 16px;
   }
 
   .cards-container-explainations-developpez {
@@ -230,6 +230,7 @@
     text-align: center;
     padding-left: 1vh;
     padding-right: 81vh;
+    margin-bottom: 3vh;
   }
 
   .arrow-transition-steps {
