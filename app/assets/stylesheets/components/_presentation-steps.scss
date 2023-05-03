@@ -207,6 +207,10 @@
   .ul-title-container-steps {
     padding-top: 10%;
   }
+
+  .image-mobile-steps {
+    display: none;
+  }
 }
 
 // Mobile format
@@ -238,8 +242,7 @@
   }
 
   .icone-each-steps-camino {
-    width: 50vw;
-    max-width: 140px;
+    display: none;
   }
 
   #arrow-right-transition-steps {
@@ -396,11 +399,7 @@
   }
 
   .icon-container-explainations img {
-    border-top-right-radius: 159px;
-    border-top-left-radius: 150px;
-    border-bottom-right-radius: 16px;
-    border-bottom-left-radius: 150px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
   }
 
   .ul-title-container-steps {
