@@ -300,6 +300,12 @@
 
   .icone-steps-title {
     display: flex;
+    flex-direction: column;
+    border-top-right-radius: 159px;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 150px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
     & img {
       height: 15vh;
       margin-top: auto;
