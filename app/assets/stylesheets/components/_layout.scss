@@ -41,9 +41,10 @@
 /* Media queries */
 @media screen and (max-width: 768px) {
   .layout {
+    display: grid;
     grid-template-rows: 56px auto;
     grid-template-columns: 1fr;
-    grid-template-areas: "a" "b";
+    grid-template-areas: "a" "b" "c";
     width: 100%;
   }
 
