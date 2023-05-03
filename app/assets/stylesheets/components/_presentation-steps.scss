@@ -237,6 +237,7 @@
     overflow: hidden;
     height: auto;
     margin-bottom: 4vh;
+    margin-top: 3vh;
   }
 
   .context-steps {
@@ -297,7 +298,7 @@
     margin: auto;
     display: flex;
     gap: 5vw;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 3vh;
     & p {
       width: 80%;
@@ -387,15 +388,12 @@
 
   #icon-developpez-steps {
     padding: 16px;
-    margin-right: 2vw;
   }
   #icon-projetez-steps {
     padding: 16px;
-    margin-right: 2vw;
   }
   #icon-engagez-steps {
     padding: 16px;
-    margin-right: 2vw;
   }
 
   .cards-container-explainations-developpez {

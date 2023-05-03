@@ -171,34 +171,25 @@
     box-shadow: var(--small-shadow);
     margin: auto;
     padding: 30px 0 30px 0;
+    margin-left: 10px;
+    margin-right: 10px;
     & h2 {
       padding-top: 24px;
     }
   }
 
-  // .cards-global-value {
-  //   display: grid;
-  //   grid-template-columns: repeat(3, 1fr);
-  //   height: auto;
-  //   gap: 40px; /* Adjust the gap as per your design */
-  //   max-width: 100%; /* ajuster la largeur maximale de la grille en fonction de vos besoins */
-  //   margin: 0 auto; /* centrer la grille horizontalement */
-  //   justify-items: center;
-  //   padding: 16px 50px 16px 50px;
-  // }
-
   .value-proposition {
     border-radius: 16px;
     box-shadow: var(--small-shadow);
     overflow: hidden;
-    width: 90%;
+    width: 85%;
     height: auto;
     border: 1px solid  black;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: auto;
-    margin-top: 2vh;
+    margin-top: 5vh;
     margin-bottom: 6vh;
     // border-bottom: 2px solid  black;
     // border-right: 2px solid  black;
