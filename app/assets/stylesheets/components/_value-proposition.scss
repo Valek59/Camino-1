@@ -34,7 +34,7 @@
 .cards-global-value {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 420px;;
+  height: auto;
   gap: 40px; /* Adjust the gap as per your design */
   max-width: 100%; /* ajuster la largeur maximale de la grille en fonction de vos besoins */
   margin: 0 auto; /* centrer la grille horizontalement */
