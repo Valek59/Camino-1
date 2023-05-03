@@ -126,6 +126,7 @@
     justify-content: center;
     margin: 50px auto;
     font-family: "Avenir", sans-serif;
+    font-size: 1.2rem;
   }
 
   .first-last-name {
@@ -139,11 +140,10 @@
 
   input[type="text"], input[type="email"], input[type="tel"], select {
     width: 100%;
-    padding: 10px;
     border: none;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     background-color: #fffdf7;
     border : 1px solid #FFBA40;
   }
