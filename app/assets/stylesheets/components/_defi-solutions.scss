@@ -27,10 +27,15 @@
     }
   }
 
+  .container-phrase-reponse-defi-solution {
+    margin-bottom: 2vh;
+  }
+
   .phrase-defi-solutions {
     padding:16px 16px 16px 24px;
     background-color: #475177;
     color: white;
+    font-size: 1.4rem;
     border-radius: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-weight: bold;
@@ -89,10 +94,11 @@
   //   }
 
   .image-defi-solution {
-    margin-left: 10vw;
+    display: flex;
+    justify-content: space-around;
     box-sizing: border-box;
     margin-block: auto;
-    width: 50%;
+    width: 40%;
     -o-object-fit: cover;
     object-fit: cover;
     overflow-clip-margin: content-box;
@@ -100,7 +106,7 @@
   }
 
   #defi-solution-icon {
-    width: 80%;
+    width: 50%;
     height: auto;
   }
 }
