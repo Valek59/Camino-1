@@ -1,6 +1,6 @@
 
 // Destop format
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .context-steps {
     margin-left: 5vw;
     margin-right: 5vw;
@@ -211,7 +211,7 @@
 
 // Mobile format
 
-@media (max-width: 768px) { /* adjust for smaller screens */
+@media screen and (max-width: 768px) {
   .cards-container-explainations {
     grid-template-columns: 1fr;
     margin: 20px 0 40px 0;
