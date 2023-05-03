@@ -1,3 +1,5 @@
+
+// Destop format
 @media screen and (min-width: 768px) {
   .context-steps {
     margin-left: 5vw;
@@ -207,6 +209,8 @@
   }
 }
 
+// Mobile format
+
 @media (max-width: 768px) { /* adjust for smaller screens */
   .cards-container-explainations {
     grid-template-columns: 1fr;
@@ -267,7 +271,7 @@
   .camino-3-steps-title {
     padding-top: 12vh;
     text-align: center;
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 2000;
   }
 
@@ -366,9 +370,9 @@
     color: #272728;
     border-radius: 16px;
     padding: 20px;
-    margin: 10px 50px 0 50px;
+    margin: 10px;
     padding: 5px 20px 5px 20px;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .container-one-step {
