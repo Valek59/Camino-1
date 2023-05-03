@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('/assets/fonts/Avenir.ttf') format('truetype');
+}
 @media screen and (max-width: 768px) {
   .first-title {
       margin-top: 4vh;
@@ -36,35 +40,27 @@
       padding-top: 16px;
       padding-bottom: 16px;
     }
+
+    .banner-website-camino {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .image-banner-website-camino {
+      width: 90%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      overflow-clip-margin: content-box;
+      height: 400PX;
+      margin-bottom: 130px;
+    }
+
+    .phrase-accroche {
+      margin: 20px 70px 20px 70px;
+      font-size: 2rem;
+    }
 }
-
-@font-face {
-  font-family: 'Avenir';
-  src: url('/assets/fonts/Avenir.ttf') format('truetype');
-}
-
-.banner-website-camino {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.image-banner-website-camino {
-  width: 90%;
-  height: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  overflow-clip-margin: content-box;
-  height: 400PX;
-  margin-bottom: 130px;
-}
-
-
-
-.phrase-accroche {
-  margin: 20px 70px 20px 70px;
-  font-size: 2rem;
-}
-
 
 --------------------------------STEPS-CONTAINER-EXPLAINATION---------------------
 .cards-container-explainations {

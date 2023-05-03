@@ -1,5 +1,5 @@
 // Destop format
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .btn {
     background-color: #FFBA40;
     padding:10px 24px 10px 24px;
@@ -14,7 +14,7 @@
 }
 
 // Mobile format
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .btn {
     background-color: #FFBA40;
     padding:5px 15px 5px 15px;
