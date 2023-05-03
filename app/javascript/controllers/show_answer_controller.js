@@ -1,4 +1,3 @@
-// app/javascript/controllers/reponse_controller.js
 import { Controller } from "@hotwired/stimulus";
 
 export default class extends Controller {
@@ -36,56 +35,3 @@ export default class extends Controller {
   };
 }
 }
-
-// export default class extends Controller {
-//   static targets = ["reponse"];
-
-//   showAnswer() {
-//     const isVisible = this.reponseTarget.classList.contains("visible");
-
-//     if (!isVisible) {
-//       this.reponseTarget.classList.add("anim-top-to-bottom", "visible");
-//       document.addEventListener("click", (event) => this.hideAnswer(event));
-//     }
-//   }
-
-//   hideAnswer(event) {
-//   event.preventDefault()
-//   // Ignore event if clicked within element
-//   if(this.element === event.reponseTarget || this.element.contains(event.target)) return;
-
-//   // Execute the actual action we're interested in
-//   this.reponseTarget.classList.remove("visible", "anim-top-to-bottom");
-// }
-
-  // hideAnswer(event) {
-  //   if (!this.reponseTarget.contains(event.target)) {
-  //     this.reponseTarget.classList.remove("visible");
-  //     setTimeout(() => {
-  //       this.reponseTarget.classList.remove("visible");
-  //     }, 500);
-  //     document.removeEventListener("click", this.hideAnswer.bind(this));
-  //   }
-  // }
-
-//
-// showAnswer(event) {
-  // const clickedElement = event.target;
-  // const reponseTarget = clickedElement.closest("reponse");
-  // const isVisible = reponseTarget.classList.contains("visible");
-//
-  // if (!isVisible) {
-    // reponseTarget.classList.add("anim-top-to-bottom", "visible");
-    // document.addEventListener("click", (event) => this.hideAnswer(event));
-  // }
-// }
-//
-// hideAnswer(event) {
-  // const clickedElement = event.target;
-  // const reponseTarget = clickedElement.closest("reponse");
-//
-  // if (!reponseTarget.contains(clickedElement)) {
-    // reponseTarget.classList.remove("visible");
-    // document.removeEventListener("click", this.hideAnswer.bind(this));
-  // }
-// }
