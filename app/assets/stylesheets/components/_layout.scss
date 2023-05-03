@@ -44,7 +44,7 @@
     display: grid;
     grid-template-rows: 56px auto;
     grid-template-columns: 1fr;
-    grid-template-areas: "a";
+    grid-template-areas: "a" "b" "c";
     width: 100%;
   }
 
