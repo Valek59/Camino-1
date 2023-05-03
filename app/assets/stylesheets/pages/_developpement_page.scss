@@ -14,8 +14,9 @@
       color:  #272728;
       font-size: 2rem;
       font-weight: 2000;
-      padding-top: 8px;
+      padding-top: 6vh;
     }
+
   .image-banner-website-camino {
     width: 90%;
     height: 100%;
@@ -23,11 +24,14 @@
     overflow: hidden;
     overflow-clip-margin: content-box;
     height: auto;
+    margin-bottom: 5vh;
   }
+
   .banner-website-camino {
     display: flex;
     justify-content: space-evenly;
   }
+
   .container-cta{
     margin-bottom: 56px;
     margin-left: 5vw;
