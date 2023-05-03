@@ -161,7 +161,6 @@
   .cards-global-value {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
-    max-width: 90%; /* ajuster la largeur maximale de la grille pour les écrans plus petits */
   }
 
   .total-value-proposition {
@@ -201,6 +200,8 @@
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 4vh;
     // border-bottom: 2px solid  black;
     // border-right: 2px solid  black;
       & h3 {
