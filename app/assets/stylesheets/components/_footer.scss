@@ -1,3 +1,35 @@
+@media only screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  .footer-links {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .logo-footer {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer-links a {
+    display: block;
+    margin: 10px 0px;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0;
+  }
+  .btn-footer-mentions-legales {
+    font-size: 1rem;
+    padding: 0px 5px;
+
+    &:hover {
+      color: #272728;
+      opacity: 1.0;
+    }
+  }
+}
+
 .footer {
   background-color: white;
   grid-area: c;
