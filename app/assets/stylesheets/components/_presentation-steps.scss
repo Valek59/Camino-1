@@ -226,15 +226,14 @@
     font-size: 1.5rem;
     font-weight: 500;
     margin-top: 5vh;
-    margin-bottom: 3vh;
+    margin-bottom: 8vh;
     text-align: center;
     padding-left: 1vh;
     padding-right: 81vh;
   }
 
   .arrow-transition-steps {
-    background-color: #FFF2CC;
-    padding-top: 5vh;
+    display: none;
   }
 
   .icone-each-steps-camino {
@@ -243,19 +242,11 @@
   }
 
   #arrow-right-transition-steps {
-    position: absolute;
-    transform: translateY(-50%);
-    margin-top: 15vh;
-    padding-bottom: 10vh;
-    right: 10vw;
+    display: none;
   }
 
   #arrow-left-transition-steps {
-    position: absolute;
-    transform: translateY(-50%);
-    padding-bottom: 10vh;
-    left: 10vw;
-    transform: scaleX(-1);
+    display: none;
   }
 
   .text-explaination-container-steps {
@@ -271,7 +262,7 @@
   .camino-3-steps-title {
     padding-top: 12vh;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 2000;
   }
 
@@ -368,10 +359,9 @@
 
   .camino-steps {
     color: #272728;
+    padding : 5px;
     border-radius: 16px;
-    padding: 20px;
     margin: 10px;
-    padding: 5px 20px 5px 20px;
     font-size: 1rem;
   }
 

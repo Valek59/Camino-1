@@ -2,6 +2,8 @@
   font-family: 'Avenir';
   src: url('/assets/fonts/Avenir.ttf') format('truetype');
 }
+
+// Mobile format
 @media screen and (max-width: 768px) {
   .first-title {
       margin-top: 4vh;
@@ -29,6 +31,8 @@
   }
 }
 
+
+// Destop format
 @media screen and (min-width: 769px) {
   .first-title {
       margin: 4vh 15vh 3vh 15vh;
