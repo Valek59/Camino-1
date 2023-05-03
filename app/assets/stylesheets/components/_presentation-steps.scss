@@ -46,7 +46,7 @@
   }
 
   .explaination-context-rh {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     margin-bottom: -1vh;
     margin-top: 2vh;
   }
@@ -54,7 +54,7 @@
   .camino-3-steps-title {
     padding-top: 12vh;
     text-align: center;
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 2000;
   }
 
@@ -68,9 +68,9 @@
   .container-icon-and-p-steps{
     margin: auto;
     display: flex;
-    gap: 8vw;
-    font-size: 1.1rem;
-    margin-top: 3vh;
+    font-size: 1.4rem;
+    margin-top: 7vh;
+
     & p {
       width: 80%;
       margin: auto;
@@ -89,8 +89,8 @@
   .icone-steps-title {
     display: flex;
     & img {
-      height: 15vh;
       margin-top: auto;
+      width: 90%;
     }
   }
 
@@ -129,11 +129,11 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   .phrase-steps {
-    margin-bottom: 4vh;
+    margin-bottom: 15vh;
     text-align: center;
     font-weight: 500;
     padding-bottom: 2vh;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .presentation-steps-camino-title {
@@ -165,7 +165,7 @@
   .cards-container-explainations {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 20vh 0 35vh 0;
+    margin: 10vh 0 25vh 0;
     border-radius: 16px;
     border-top-left-radius: 150%;
     border-bottom-left-radius: 150%;
