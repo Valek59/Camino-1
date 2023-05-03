@@ -19,7 +19,7 @@
   }
 
   .defi-solutions {
-    margin: 30px 100px 50px 70px;
+    margin: 50px 100px 50px 70px;
     width: 50%;
     box-sizing: border-box;
     & h2 {
@@ -33,6 +33,9 @@
 
   .phrase-defi-solutions {
     padding:16px 16px 16px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: #475177;
     color: white;
     font-size: 1.4rem;
@@ -79,20 +82,6 @@
     padding-bottom: 30px;
   }
 
-  // .anim-top-to-bottom {
-  //   animation: top-to-bottom 0.5s;
-  //   }
-  //   @keyframes top-to-bottom {
-  //   from {
-  //   opacity: 0;
-  //   transform: translateY(-20px);
-  //   }
-  //   to {
-  //   opacity: 1;
-  //   transform: translateY(0);
-  //   }
-  //   }
-
   .image-defi-solution {
     display: flex;
     justify-content: space-around;
@@ -102,7 +91,8 @@
     -o-object-fit: cover;
     object-fit: cover;
     overflow-clip-margin: content-box;
-    margin-top: 20px;
+    padding-left: 5vw;
+    padding-right: -3vw;
   }
 
   #defi-solution-icon {
