@@ -2,6 +2,18 @@
   font-family: 'Avenir';
   src: url('/assets/fonts/Avenir.ttf') format('truetype');
 }
+@media screen and (max-width: 768px) {
+  h2.value-proposition-title-cards {
+    font-size: 1.2rem;
+    padding-top: 80px ;
+    padding-bottom: 50px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: 600;
+    color: #272728;
+  }
+}
 
 .total-value-proposition {
   width: 100%;

@@ -1,14 +1,17 @@
 @media screen and (max-width: 768px) {
   .first-title {
-      margin: 4vh 15vh 3vh 15vh;
+      margin: 4vh 6vw;
       text-align: center;
       padding: 0;
       color:  #272728;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 2000;
       padding-top: 8px;
       padding-bottom: 8px;
     }
+  .image-banner-website-camino {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 769px) {
