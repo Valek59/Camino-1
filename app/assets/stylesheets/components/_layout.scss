@@ -44,6 +44,7 @@
     grid-template-rows: 56px auto;
     grid-template-columns: 1fr;
     grid-template-areas: "a" "b";
+    width: 100%;
   }
 
   .tabs-underlined {
@@ -55,20 +56,20 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .layout {
-    grid-template-rows: 56px auto;
-    grid-template-columns: 1fr;
-    grid-template-areas: "a" "b";
-  }
+// @media screen and (max-width: 480px) {
+//   .layout {
+//     grid-template-rows: 56px auto;
+//     grid-template-columns: 1fr;
+//     grid-template-areas: "a" "b";
+//   }
 
-  .tabs-underlined {
-    flex-wrap: wrap;
-  }
+//   .tabs-underlined {
+//     flex-wrap: wrap;
+//   }
 
-  .tabs-underlined .tab-underlined {
-    font-size: 12px;
-    padding: 4px;
-    margin: 2px;
-  }
-}
+//   .tabs-underlined .tab-underlined {
+//     font-size: 12px;
+//     padding: 4px;
+//     margin: 2px;
+//   }
+// }
