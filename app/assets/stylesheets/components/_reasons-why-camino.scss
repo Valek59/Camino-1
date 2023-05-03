@@ -3,6 +3,7 @@
   src: url('/assets/fonts/Avenir.ttf') format('truetype');
 }
 
+// Destop format
 @media screen and (min-width: 769px) {
   .hiw-component {
     display: -ms-grid;
@@ -91,6 +92,7 @@
   }
 }
 
+// Mobile format
 @media screen and (max-width: 768px) {
   .hiw-component {
     display: -ms-grid;
@@ -122,10 +124,10 @@
   }
 
   .container-why-camino {
-    margin-bottom: 120px;
+    margin-bottom: 15vh;
     background-color:  #FEF7E6;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .why-camino-title {
@@ -141,18 +143,18 @@
   }
 
   .why-camino-subtitle {
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding-top: 8px ;
     text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-weight: 500;
     color: #272728;
   }
 
   .blockquote {
     margin: 24px;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #272728;
     font-weight: 600;
   }
@@ -168,6 +170,7 @@
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
     opacity: 1;
+    margin-top: 3vh;
   }
 
   #icon-why-camino {
