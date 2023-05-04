@@ -254,21 +254,35 @@
     margin-bottom: 3vh;
   }
 
-  // .arrow-transition-steps {
-  //   display: none;
-  // }
+  .arrow-transition-steps {
+    background-color: #FFF2CC;
+    padding-top: 5vh;
+  }
 
-  // .icone-each-steps-camino {
-  //   display: none;
-  // }
+  .icone-each-steps-camino {
+    width: 50vw;
+    max-width: 140px;
+  }
 
-  // #arrow-right-transition-steps {
-  //   display: none;
-  // }
+  #arrow-right-transition-steps {
+    position: absolute;
+    transform: translateY(-50%);
+    margin-top: 11vh;
+    right: 10vw;
+    & img {
+      height: 80px;
+    }
+  }
 
-  // #arrow-left-transition-steps {
-  //   display: none;
-  // }
+  #arrow-left-transition-steps {
+    position: absolute;
+    transform: translateY(-50%);
+    left: 10vw;
+    transform: scaleX(-1);
+    & img {
+      height: 80px;
+    }
+  }
 
   .text-explaination-container-steps {
     margin: auto;
