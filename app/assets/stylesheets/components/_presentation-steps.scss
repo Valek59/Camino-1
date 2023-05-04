@@ -267,8 +267,11 @@
   #arrow-right-transition-steps {
     position: absolute;
     transform: translateY(-50%);
-    margin-top: 11vh;
-    right: 10vw;
+    margin-top: -5vh;
+    height: 80px;
+    right: 15vw;
+    margin-top: -10vh;
+    height: 80px;
     & img {
       height: 80px;
     }
@@ -277,7 +280,7 @@
   #arrow-left-transition-steps {
     position: absolute;
     transform: translateY(-50%);
-    left: 10vw;
+    left: 15vw;
     transform: scaleX(-1);
     & img {
       height: 80px;
@@ -298,6 +301,7 @@
 
   .camino-3-steps-title {
     text-align: center;
+    margin-top: 2vh;
     font-size: 3rem;
     font-weight: 2000;
     & p {
