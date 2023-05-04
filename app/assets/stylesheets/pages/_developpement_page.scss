@@ -3,10 +3,52 @@
   src: url('/assets/fonts/Avenir.ttf') format('truetype');
 }
 
+
+// Destop format
+@media screen and (min-width: 769px) {
+  .first-title {
+      margin: 6vh 15vh 0 15vh;
+      text-align: center;
+      padding: 0;
+      color:  #272728;
+      font-size: 3.5rem;
+      font-weight: 2000;
+      padding-top: 16px;
+      padding-bottom: 8px;
+    }
+
+    .banner-website-camino {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .image-banner-website-camino {
+      width: 90%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      overflow-clip-margin: content-box;
+      height: 400PX;
+      margin-bottom: 130px;
+    }
+
+    .phrase-accroche {
+      margin: 20px 70px 20px 70px;
+      font-size: 2rem;
+    }
+
+    .container-cta{
+      margin-bottom: 56px;
+      margin-left: 5vw;
+      margin-right: 5vw;
+    }
+}
+
+
 // Mobile format
 @media screen and (max-width: 768px) {
   .first-title {
-      margin-top: 6vh;
+      margin-top: 4vh;
       margin-left: 5vw;
       margin-right: 5vw;
       text-align: center;
@@ -40,46 +82,6 @@
 
 }
 
-
-// Destop format
-@media screen and (min-width: 769px) {
-  .first-title {
-      margin: 4vh 15vh 3vh 15vh;
-      text-align: center;
-      padding: 0;
-      color:  #272728;
-      font-size: 5rem;
-      font-weight: 2000;
-      padding-top: 16px;
-      padding-bottom: 16px;
-    }
-
-    .banner-website-camino {
-      display: flex;
-      justify-content: space-evenly;
-    }
-
-    .image-banner-website-camino {
-      width: 90%;
-      height: 100%;
-      object-fit: cover;
-      overflow: hidden;
-      overflow-clip-margin: content-box;
-      height: 400PX;
-      margin-bottom: 130px;
-    }
-
-    .phrase-accroche {
-      margin: 20px 70px 20px 70px;
-      font-size: 2rem;
-    }
-
-    .container-cta{
-      margin-bottom: 56px;
-      margin-left: 5vw;
-      margin-right: 5vw;
-    }
-}
 
 --------------------------------STEPS-CONTAINER-EXPLAINATION---------------------
 .cards-container-explainations {
