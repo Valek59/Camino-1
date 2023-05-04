@@ -46,6 +46,10 @@
     .cta-title {
       margin-bottom: 10vh;
     }
+
+    .image-banner-website-camino-mobile {
+      display: none;
+    }
 }
 
 
@@ -63,7 +67,7 @@
       padding-top: 6vh;
     }
 
-  .image-banner-website-camino {
+  .image-banner-website-camino-mobile {
     width: 90%;
     height: 100%;
     object-fit: cover;
@@ -86,6 +90,10 @@
 
   .cta-title {
     margin-bottom: 56px;
+  }
+
+  .image-banner-website-camino {
+    display: none;
   }
 
 }
