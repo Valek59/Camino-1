@@ -9,7 +9,7 @@
 
   #defi-solution-title {
     font-size: 4rem;
-    padding-top: 15vh ;
+    padding-top: 20vh ;
     padding-bottom: 5vh;
     text-align: center;
     padding-left: 50px;
@@ -19,7 +19,7 @@
   }
 
   .defi-solutions {
-    margin: 50px 100px 50px 70px;
+    margin: 50px 150px 50px 70px;
     width: 50%;
     box-sizing: border-box;
     & h2 {
@@ -93,11 +93,11 @@
     object-fit: cover;
     overflow-clip-margin: content-box;
     padding-left: 5vw;
-    padding-right: -3vw;
+    margin-right: -10vh;
   }
 
   #defi-solution-icon {
-    width: 50%;
+    width: 60%;
     height: auto;
   }
 }
