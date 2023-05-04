@@ -291,7 +291,7 @@
   }
 
   .explaination-context-rh {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: -1vh;
     margin-top: 2vh;
   }
@@ -315,8 +315,8 @@
   .container-icon-and-p-steps{
     margin: auto;
     display: flex;
-    gap: 5vw;
-    font-size: 1rem;
+    gap: 8vw;
+    font-size: 0.9rem;
     margin-top: 3vh;
     & p {
       width: 80%;
@@ -338,7 +338,6 @@
     flex-direction: column;
     & img {
       height: 25vh;
-      margin-top: auto;
     }
   }
 
