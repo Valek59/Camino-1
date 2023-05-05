@@ -14,7 +14,7 @@ class ClientsController < ApplicationController
   def create
     @client = Client.new(client_params)
     if @client.save
-      redirect_to developpement_path, notice: "Votre demande de prise de contact a bien été enregistrée"
+      redirect_to developpement_path, notice: "Merci, votre demande de prise de contact a bien été enregistrée"
     else
       render :new, status: :unprocessable_entity
     end
