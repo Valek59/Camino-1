@@ -1,6 +1,6 @@
 // Destop format
 @media screen and (min-width: 769px) {
-  .btn {
+  .btn-savoir-plus {
     background-color: #FFBA40;
     padding:8px 24px 8px 24px;
     border-radius: 16px;
@@ -11,7 +11,7 @@
     margin-bottom: 5px;
   }
 
-  .btn :hover {
+  .btn-savoir-plus :hover {
     border: 2px solid #272728;
     background-color: #FEF7E6;
   }
@@ -19,7 +19,7 @@
 
 // Mobile format
 @media screen and (max-width: 768px) {
-  .btn {
+  .btn-savoir-plus {
     background-color: #FFBA40;
     padding:4px 12px 4px 12px;
     border-radius: 16px;
@@ -27,7 +27,7 @@
     font-weight: 700;
   }
 
-  .btn :hover {
+  .btn-savoir-plus :hover {
     border: 2px solid #272728;
     background-color: #FEF7E6;
   }
