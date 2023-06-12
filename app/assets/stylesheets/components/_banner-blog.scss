@@ -2,16 +2,29 @@
 @media screen and (min-width: 769px) {
   .banner-blog {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
   }
+
+  .bonjour{
+    font-family: 'Avenir';
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.articles-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
 }
 
 // Mobile format
 @media screen and (max-width: 768px) {
-  .banner-blog {
+  .banner-blog{
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
   }
 }
