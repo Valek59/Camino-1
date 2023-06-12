@@ -1,0 +1,17 @@
+// Destop format
+@media screen and (min-width: 769px) {
+  .banner-blog {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
+
+// Mobile format
+@media screen and (max-width: 768px) {
+  .banner-blog {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+}

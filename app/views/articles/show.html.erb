@@ -1,0 +1,21 @@
+<%= render "shared/navbar-top-default" %>
+<main class="content-middle">
+
+  <div class="show-post-container">
+    <div class="information-post-show">
+      <p class="main-title-show-post"><%= @article.title %></p>
+        <% @article.image do %>
+          <%= image_tag @article.image, size: "800x500" %>
+        <% end %>
+      <p class="show-post-category"><strong>Catégorie</strong> : <%= @article.category %></p>
+      <p class="show-post-category"> <strong>Date de publication </strong> : <%= @article.publication_date %></p>
+
+      <p class="content-show-post"> <%= @article.content %> </p>
+      <div class="show-buttons">
+
+      </div>
+    </div>
+  </div>
+
+  </main>
+<%= render "shared/footer" %>
