@@ -27,20 +27,34 @@
     <ul>
       <li class="reading-time-container">
           <i class="fa-solid fa-circle" style="color: #475177;"></i>
-          <p> dorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          <a href="#title1-show-article" class="link-to-titles"> <%= @article.title1 %> </a>
       </li>
       <li class="reading-time-container">
           <i class="fa-solid fa-circle" style="color: #475177;"></i>
-          <p> dorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          <a href="#title2-show-article" class="link-to-titles"> <%= @article.title2 %> </a>
       </li>
       <li class="reading-time-container">
           <i class="fa-solid fa-circle" style="color: #475177;"></i>
-          <p> dorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          <a href="#title3-show-article" class="link-to-titles"> <%= @article.title3 %> </a>
       </li>
     </ul>
   </div>
 
-  <p class="content-show-article"> <%= @article.content %> </p>
+  <div class="paragraphe-container">
+    <div class="paragraphe-title-container">
+      <p class="paragraphe-title-show-article" id="title1-show-article"> <strong>  <%= @article.title1 %> </strong> </p>
+      <p class="content-show-article"> <%= @article.paragraphes1 %> </p>
+    </div>
+    <div class="paragraphe-title-container">
+      <p class="paragraphe-title-show-article" id="title2-show-article"> <strong>  <%= @article.title2 %> </strong> </p>
+      <p class="content-show-article"> <%= @article.paragraphes2 %> </p>
+    </div>
+    <div class="paragraphe-title-container">
+      <p class="paragraphe-title-show-article" id="title3-show-article"> <strong>  <%= @article.title3 %> </strong> </p>
+      <p class="content-show-article"> <%= @article.paragraphes3 %> </p>
+    </div>
+
+  </div>
 
 </main>
 <%= render "shared/footer" %>

@@ -22,6 +22,16 @@
   margin-bottom: 2rem;
 }
 
+.paragraphe-title-show-article {
+  font-size: 2.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.paragraphe-title-container {
+  margin-bottom: 4rem;
+}
+
+
 .main-title-show-article {
   font-size: 3rem;
   font-weight: 600;
@@ -44,11 +54,6 @@
     padding: 0;
   }
 }
-
-// .information-left-show-blog-container {
-//   display: flex;
-//   flex-direction: column;
-// }
 
 .summary-article-show {
   font-size: 1.2rem;
@@ -90,12 +95,17 @@
   margin-right: 10rem;
 }
 
+.link-to-titles {
+  text-decoration: none;
+  color: #272728;
+}
+
 .syntesis-show-article-blog-container {
   padding: 2rem;
   font-size: 1.25rem;
   background-color:  #FFF2CC;
   border-radius: 16px;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .content-show-article {
