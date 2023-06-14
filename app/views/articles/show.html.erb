@@ -1,21 +1,46 @@
 <%= render "shared/navbar-top-default" %>
 <main class="content-middle">
 
-  <div class="show-post-container">
-    <div class="information-post-show">
-      <p class="main-title-show-post"><%= @article.title %></p>
-        <% @article.image do %>
-          <%= image_tag @article.image, size: "800x500" %>
-        <% end %>
-      <p class="show-post-category"><strong>Catégorie</strong> : <%= @article.category %></p>
-      <p class="show-post-category"> <strong>Date de publication </strong> : <%= @article.publication_date %></p>
-
-      <p class="content-show-post"> <%= @article.content %> </p>
-      <div class="show-buttons">
-
+  <div class="show-article-container">
+    <div class="information-article-show">
+      <div class="information-left-show-blog-container">
+        <a href= "<%= articles_path %>" class="retour-show-article">
+          <i class="fa-solid fa-arrow-left-long" style="color: #272728;"> </i>
+          <p>Retour</p>
+        </a>
+        <p class="main-title-show-article"><%= @article.title %></p>
+        <p class="category-article-show"> <%= @article.category %></p>
+        <p class="summary-article-show"> <strong> En synthèse : </strong> <%= @article.summary %> </p>
+        <div class="category-reading-time-show-article">
+            <div class="reading-time-container">
+              <i class="fa-solid fa-book-open" style="color: #272728;"></i>
+              <p class="article-reading-time-blog-show"><%= @article.reading_time %> minutes </p>
+            </div>
+          <p class="show-post-category"> <strong>Date de publication </strong> : <%= @article.publication_date.to_date.strftime("%d/%m/%Y") %> </p>
+        </div>
       </div>
-    </div>
+    <%= image_tag @article.image, class: "image-article-show-blog" %>
   </div>
 
-  </main>
+  <div class="syntesis-show-article-blog-container">
+    <p class="sommaire-title-show-article"> <strong> Le sommaire : </strong> </p>
+    <ul>
+      <li class="reading-time-container">
+          <i class="fa-solid fa-circle" style="color: #475177;"></i>
+          <p> dorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      </li>
+      <li class="reading-time-container">
+          <i class="fa-solid fa-circle" style="color: #475177;"></i>
+          <p> dorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      </li>
+      <li class="reading-time-container">
+          <i class="fa-solid fa-circle" style="color: #475177;"></i>
+          <p> dorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      </li>
+    </ul>
+  </div>
+
+  <p class="content-show-article"> <%= @article.content %> </p>
+
+</main>
 <%= render "shared/footer" %>

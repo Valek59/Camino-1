@@ -1,33 +1,52 @@
+<%= render "shared/navbar-top-default" %>
+<main class="content-middle">
 
-
-
-<div id="julien">
-  <div class="image-banner-blog">
-    <img src="<%= asset_path('blog-banner-image.jpeg') %>" sizes="(max-width: 767px) 16vw, 13vw" srcset="<%= asset_path('blog-banner-image.jpeg') %> 500w, <%= asset_path('blog-banner-image.jpeg') %> 660w" alt="picture bull sunset">
+  <div class="banner-blog">
+    <p class="camino-blog-title"> Bienvenue sur notre blog </p>
   </div>
-  <div class="banner-introduction-blog">
-    <h1>LE BLOG CAMINO </h1>
-    <p> Bienvenue sur le blog <br> Data is Yours.</p>
+  <p class="phrase-accroche-index-blog">Des ressources et des inspirations pour faire du développement professionnel un pilier de votre organisation</p>
+
+
+  <div class="blog-checkbox-choice">
+    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+    <label class="btn btn-primary" for="btn-check-2"><i class="fa-solid fa-magnifying-glass" id="space-between-icon-category" style="color: #272728;"></i><strong>   Décryptage </strong></label>
+    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+    <label class="btn btn-primary" for="btn-check-2"> <i class="fa-regular fa-comments" id="space-between-icon-category" style="color: #272728;"></i><strong>   Débat </strong></label>
+    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+    <label class="btn btn-primary" for="btn-check-2"><i class="fa-regular fa-eye" id="space-between-icon-category" style="color: #272728;"></i><strong>   Benchmark</strong></label>
+    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+    <label class="btn btn-primary" for="btn-check-2"><i class="fa-regular fa-paper-plane" id="space-between-icon-category" style="color: #272728;"></i><strong>   Tendances</strong></label>
+    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+    <label class="btn btn-primary" for="btn-check-2"><i class="fa-solid fa-people-arrows" id="space-between-icon-category" style="color: #272728;"></i><strong>   Interview</strong></label>
+    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+    <label class="btn btn-primary" for="btn-check-2"><i class="fa-solid fa-users-viewfinder" id="space-between-icon-category" style="color: #272728;"></i><strong>   Portrait</strong></label>
   </div>
-</div>
 
-<div class="julien-coucou">
-  <% @articles.order("RANDOM()").each do |article| %>
-    <div class="card-post">
-      <h2><% article.title %></h2>
-
-      <div class="image-index">
-          <%= image_tag article.image, size: "800x500" %>
-      </div>
-      <div class="main-information-card-index">
-        <p><strong> Catégorie </strong> : <%= article.category %></p>
-        <p> <strong>Date de publication</strong> : <%= article.publication_date %></p>
-        <div class="all-links-index">
-          <%= link_to "Lire l'article sur le site", article.url, class: 'link-index' %>
-          <%= link_to 'Supprimer cet article', article_path(article), class: 'link-index', data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr ?"} %>
-          <%= link_to "Lire l'article sur Yours", article_path(article), class: 'link-index' %>
+  <div class="cards-articles-container">
+      <% @articles.order("RANDOM()").each do |article| %>
+      <a href="<%= article_path(article) %>" class="article-link-index">
+        <div class="cards-articles">
+          <div class="image-index">
+              <%= image_tag article.image %>
+          </div>
+          <p class="category-article"> <%= article.category %></p>
+          <div class="main-information-card-index">
+            <p class="article-title-blog"><%= article.title %> </p>
+            <p class="description-article"> <%= truncate(article.summary.split(' ').take(20).join(' '), length: 100) %> </p>
+          </div>
+          <div class="complementary-informations-article-index">
+            <div class="reading-time-container">
+              <i class="fa-solid fa-book-open" style="color: #dedede;"></i>
+              <p class="article-reading-time-blog"><%= article.reading_time %> minutes </p>
+            </div>
+              <p class="article-publication-date-blog">
+                  <%= article.publication_date.to_date.strftime("%d/%m/%Y") %>
+              </p>
+          </div>
         </div>
-      </div>
-    </div>
-  <% end %>
-</div>
+      </a>
+      <% end %>
+  </div>
+
+</main>
+<%= render "shared/footer" %>
