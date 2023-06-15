@@ -8,18 +8,25 @@
 
 
   <div class="blog-checkbox-choice">
-    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
-    <label class="btn btn-primary" for="btn-check-2"><i class="fa-solid fa-magnifying-glass" id="space-between-icon-category" style="color: #272728;"></i><strong>   Décryptage </strong></label>
-    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+
+    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off" data-category="decryptage" data-controller="filters-articles" data-action="click->filters-articles#filter">
+    <label class="btn btn-primary" for="btn-check-2" id="decryptage-btn"><i class="fa-solid fa-magnifying-glass" id="space-between-icon-category" style="color: #272728;"></i><strong>   Décryptage </strong></label>
+
+    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off" data-category="debat">
     <label class="btn btn-primary" for="btn-check-2"> <i class="fa-regular fa-comments" id="space-between-icon-category" style="color: #272728;"></i><strong>   Débat </strong></label>
-    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+
+    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off" data-category="benchmark" data-controller="filters-articles" data-action="click->filter-articles#filter">
     <label class="btn btn-primary" for="btn-check-2"><i class="fa-regular fa-eye" id="space-between-icon-category" style="color: #272728;"></i><strong>   Benchmark</strong></label>
-    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+
+    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off" data-category="tendances" data-controller="filters-articles" data-action="click->filters-articles#filter">
     <label class="btn btn-primary" for="btn-check-2"><i class="fa-regular fa-paper-plane" id="space-between-icon-category" style="color: #272728;"></i><strong>   Tendances</strong></label>
-    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+
+    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off" data-category="interview" data-controller="filters-articles" data-action="click->filters-articles#filter">
     <label class="btn btn-primary" for="btn-check-2"><i class="fa-solid fa-people-arrows" id="space-between-icon-category" style="color: #272728;"></i><strong>   Interview</strong></label>
-    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+
+    <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off" data-category="portrait" data-controller="filters-articles" data-action="click->filters-articles#filter">
     <label class="btn btn-primary" for="btn-check-2"><i class="fa-solid fa-users-viewfinder" id="space-between-icon-category" style="color: #272728;"></i><strong>   Portrait</strong></label>
+
   </div>
 
   <div class="cards-articles-container">
@@ -29,7 +36,9 @@
           <div class="image-index">
               <%= image_tag article.image %>
           </div>
-          <p class="category-article"> <%= article.category %></p>
+          <div class="category-mobile-index">
+            <p class="category-article"> <%= article.category %></p>
+          </div>
           <div class="main-information-card-index">
             <p class="article-title-blog"><%= article.title %> </p>
             <p class="description-article"> <%= truncate(article.summary.split(' ').take(20).join(' '), length: 100) %> </p>
