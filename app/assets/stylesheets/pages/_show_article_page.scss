@@ -5,8 +5,18 @@
     display: flex;
     justify-content: space-between;
     gap: 5rem;
-    margin-top: 2rem;
+    margin-top: 3.5rem;
     margin-bottom: 4rem;
+  }
+
+  .link-to-titles {
+    font-size: 1.25rem;
+  }
+
+  .show-article-title {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
   }
 
   .image-article-show-blog {
@@ -17,8 +27,42 @@
     border-radius: 16px;
   }
 
-  .sommaire-title-show-article {
+  .synthese-title {
+    margin-top: 1rem;
     font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  // .transition-paragraphe {
+  //   background-color: #FFF2CC;
+  //   width: 30%;
+  //   height: 0.2rem;
+  //   border-radius: 16px;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+
+  .prenonscontact-title {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .contact-article {
+    margin-top: 5rem;
+  }
+
+  .synthese-article-show-blog {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .sommaire-title-show-article {
+    font-size: 1.25rem;
     font-weight: 600;
     color: #272728;
     margin-top: 0.5rem;
@@ -26,18 +70,19 @@
   }
 
   .paragraphe-title-show-article {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     margin-bottom: 2.5rem;
   }
 
   .paragraphe-title-container {
-    margin-bottom: 4rem;
+    // margin-bottom: 3rem;
   }
 
 
   .main-title-show-article {
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 800;
     color: #272728;
     margin-top: 1rem;
   }
@@ -59,11 +104,11 @@
   }
 
   .summary-article-show {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 400;
     color: #272728;
     margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .retour-show-article {
@@ -105,14 +150,14 @@
 
   .syntesis-show-article-blog-container {
     padding: 2rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     background-color:  #FFF2CC;
     border-radius: 16px;
     margin-bottom: 5rem;
   }
 
   .content-show-article {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: #272728;
   }
@@ -166,7 +211,7 @@
 
 
     .main-title-show-article {
-      font-size: 2.25rem;
+      font-size: 1.5rem;
       font-weight: 600;
       color: #272728;
     }
@@ -180,10 +225,10 @@
       display: flex;
       align-items: center;
       margin-bottom: 0.75rem;
-      gap: 1rem;
       & p {
         margin: 0;
         padding: 0;
+        margin-top: 0.2rem;
       }
     }
 

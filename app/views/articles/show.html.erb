@@ -1,20 +1,24 @@
 <%= render "shared/navbar-top-default" %>
 <main class="content-middle">
 
+
   <div class="show-article-container">
+    <a href= "<%= articles_path %>" class="retour-show-article">
+      <i class="fa-solid fa-arrow-left-long" style="color: #272728;"> </i>
+      <p>Retour</p>
+    </a>
+
+    <div class="show-article-title">
+      <p class="main-title-show-article"><%= @article.title %></p>
+    </div>
     <div class="information-article-show">
       <div class="information-left-show-blog-container">
-        <a href= "<%= articles_path %>" class="retour-show-article">
-          <i class="fa-solid fa-arrow-left-long" style="color: #272728;"> </i>
-          <p>Retour</p>
-        </a>
-        <p class="main-title-show-article"><%= @article.title %></p>
         <p class="category-article-show"> <%= @article.category %></p>
         <p class="summary-article-show"> <strong> En synthèse : </strong> <%= @article.summary %> </p>
         <div class="category-reading-time-show-article">
-            <div class="reading-time-container-show">
-              <i class="fa-solid fa-book-open" style="color: #272728;"></i>
-              <p class="article-reading-time-blog-show"><%= @article.reading_time %> minutes </p>
+            <div class="reading-time-container-show" style="display: flex;">
+              <i class="fa-solid fa-book-open" style="color: #272728; margin-right:1rem; margin-top: 0.25rem"></i>
+              <p class="article-reading-time-blog-show" ><%= @article.reading_time %> minutes </p>
             </div>
           <p class="show-post-category"> <strong>Date de publication </strong> : <%= @article.publication_date.to_date.strftime("%d/%m/%Y") %> </p>
         </div>
@@ -43,16 +47,26 @@
   <div class="paragraphe-container">
     <div class="paragraphe-title-container">
       <p class="paragraphe-title-show-article" id="title1-show-article"> <strong>  <%= @article.title1 %> </strong> </p>
-      <p class="content-show-article"> <%= @article.paragraphes1 %> </p>
+      <p class="content-show-article"> <%== @article.paragraphes1 %> </p>
+      <p class="transition-paragraphe"></p>
     </div>
     <div class="paragraphe-title-container">
       <p class="paragraphe-title-show-article" id="title2-show-article"> <strong>  <%= @article.title2 %> </strong> </p>
-      <p class="content-show-article"> <%= @article.paragraphes2 %> </p>
+      <p class="content-show-article"> <%== @article.paragraphes2 %> </p>
     </div>
     <div class="paragraphe-title-container">
       <p class="paragraphe-title-show-article" id="title3-show-article"> <strong>  <%= @article.title3 %> </strong> </p>
-      <p class="content-show-article"> <%= @article.paragraphes3 %> </p>
+      <p class="content-show-article"> <%== @article.paragraphes3 %> </p>
     </div>
+      <div class="synthese">
+        <p class= "synthese-title">En synthèse :</p>
+        <%= image_tag @article.imagesynthese, class: "synthese-article-show-blog" %>
+      </div>
+      <div class="contact-article">
+        <p class= "prenonscontact-title"><strong> Vous souhaiteriez échanger à ce sujet ? Avec plaisir, contactez-nous ! </strong></p>
+        <%= link_to 'PRENONS CONTACT', new_client_path, class: 'btn savoir-plus' %>
+      </div>
+
 
   </div>
 
