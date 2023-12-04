@@ -31,7 +31,7 @@ Article.create(
   title3: "Et si on essayait la méthode Camino ?",
   url: "https://www.lefigaro.fr/sports/tennis/roland-garros/rafa-xiv-le-roi-soleil-la-presse-espagnole-comblee-par-le-14e-sacre-de-nadal-a-roland-garros-20220606",
   image: "imagearticle1.jpeg",
-  reading_time: 7,
+  reading_time: 4,
   imagesynthese: "synthesearticle1.png",
   # <img_tag src='<%= asset_path('imgsynthesearticle1.png') %>' sizes='(max-width: 767px) 16vw, 13vw' srcset='<%= asset_path('imgsynthesearticle1.png') %> 500w, <%= asset_path('imgsynthesearticle1.png') %> 660w' alt='picture representing 3 happy workers' id='defi-solution-icon'>",
   summary: "La compréhension des raisons qui poussent les équipes à quitter leur entreprise est essentielle pour mettre en place des mesures visant à les retenir. Les entreprises disposent d'une panoplie de leviers activables pour améliorer leur capacité à retenir leurs équipes et à favoriser leur performance à long terme. Partons à leur rencontre."
